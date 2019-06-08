@@ -1,4 +1,5 @@
 import SwiftUI
+import UIKit
 
 public enum SFSymbol: String {
     case _0Circle = "0.circle"
@@ -1591,5 +1592,12 @@ public enum SFSymbol: String {
 public extension Image {
     init(symbol: SFSymbol) {
         self.init(systemName: symbol.rawValue)
+    }
+}
+
+@available(iOS 13.0, watchOS 6, tvOS 13, *)
+public extension UIImage {
+    convenience init(symbol: SFSymbol) {
+        self.init(systemName: symbol.rawValue)!
     }
 }
