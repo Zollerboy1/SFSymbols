@@ -1,6 +1,12 @@
 import SwiftUI
-import UIKit
 
+#if canImport(UIKit)
+import UIKit
+#elseif canImport(AppKit)
+import AppKit
+#endif
+
+@available(iOS 13.0, macOS 11.0, macCatalyst 13.0, watchOS 6, tvOS 13, *)
 public enum SFSymbol: String {
     case _0Circle = "0.circle"
     case _00Circle = "00.circle"
@@ -1586,18 +1592,1998 @@ public enum SFSymbol: String {
     case zSquare = "z.square"
     case zSquareFill = "z.square.fill"
     case zzz = "zzz"
+
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case _4kTv = "4k.tv"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case _4kTvFill = "4k.tv.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case aMagnify = "a.magnify"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case abc = "abc"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case airplaneCircle = "airplane.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case airplaneCircleFill = "airplane.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case airpodLeft = "airpod.left"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case airpodRight = "airpod.right"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case airpodproLeft = "airpodpro.left"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case airpodproRight = "airpodpro.right"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case airpods = "airpods"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case airpodspro = "airpodspro"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case airportExpress = "airport.express"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case airportExtreme = "airport.extreme"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case airportExtremeTower = "airport.extreme.tower"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case amplifier = "amplifier"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case appclip = "appclip"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case applelogo = "applelogo"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case applescript = "applescript"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case applescriptFill = "applescript.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case appletv = "appletv"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case appletvFill = "appletv.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case applewatch = "applewatch"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case applewatchRadiowavesLeftAndRight = "applewatch.radiowaves.left.and.right"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case applewatchSlash = "applewatch.slash"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case applewatchWatchface = "applewatch.watchface"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case appsIpad = "apps.ipad"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case appsIpadLandscape = "apps.ipad.landscape"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case appsIphone = "apps.iphone"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case appsIphoneBadgePlus = "apps.iphone.badge.plus"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case appsIphoneLandscape = "apps.iphone.landscape"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case archiveboxCircle = "archivebox.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case archiveboxCircleFill = "archivebox.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowBackward = "arrow.backward"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowBackwardCircle = "arrow.backward.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowBackwardCircleFill = "arrow.backward.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowBackwardSquare = "arrow.backward.square"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowBackwardSquareFill = "arrow.backward.square.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowClockwiseHeart = "arrow.clockwise.heart"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowClockwiseHeartFill = "arrow.clockwise.heart.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowDownApp = "arrow.down.app"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowDownAppFill = "arrow.down.app.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowDownBackward = "arrow.down.backward"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowDownBackwardCircle = "arrow.down.backward.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowDownBackwardCircleFill = "arrow.down.backward.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowDownBackwardSquare = "arrow.down.backward.square"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowDownBackwardSquareFill = "arrow.down.backward.square.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowDownForward = "arrow.down.forward"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowDownForwardAndArrowUpBackward = "arrow.down.forward.and.arrow.up.backward"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowDownForwardAndArrowUpBackwardCircle = "arrow.down.forward.and.arrow.up.backward.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowDownForwardAndArrowUpBackwardCircleFill = "arrow.down.forward.and.arrow.up.backward.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowDownForwardCircle = "arrow.down.forward.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowDownForwardCircleFill = "arrow.down.forward.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowDownForwardSquare = "arrow.down.forward.square"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowDownForwardSquareFill = "arrow.down.forward.square.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowDownHeart = "arrow.down.heart"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowDownHeartFill = "arrow.down.heart.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowDownRightAndArrowUpLeftCircle = "arrow.down.right.and.arrow.up.left.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowDownRightAndArrowUpLeftCircleFill = "arrow.down.right.and.arrow.up.left.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowForward = "arrow.forward"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowForwardCircle = "arrow.forward.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowForwardCircleFill = "arrow.forward.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowForwardSquare = "arrow.forward.square"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowForwardSquareFill = "arrow.forward.square.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowLeftAndRightRighttriangleLeftRighttriangleRight = "arrow.left.and.right.righttriangle.left.righttriangle.right"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowLeftAndRightRighttriangleLeftRighttriangleRightFill = "arrow.left.and.right.righttriangle.left.righttriangle.right.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowLeftArrowRight = "arrow.left.arrow.right"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowLeftArrowRightCircle = "arrow.left.arrow.right.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowLeftArrowRightCircleFill = "arrow.left.arrow.right.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowLeftArrowRightSquare = "arrow.left.arrow.right.square"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowLeftArrowRightSquareFill = "arrow.left.arrow.right.square.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowRectanglepath = "arrow.rectanglepath"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowRightDocOnClipboard = "arrow.right.doc.on.clipboard"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowTriangle2Circlepath = "arrow.triangle.2.circlepath"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowTriangle2CirclepathCamera = "arrow.triangle.2.circlepath.camera"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowTriangle2CirclepathCameraFill = "arrow.triangle.2.circlepath.camera.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowTriangle2CirclepathCircle = "arrow.triangle.2.circlepath.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowTriangle2CirclepathCircleFill = "arrow.triangle.2.circlepath.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowTriangle2CirclepathDocOnClipboard = "arrow.triangle.2.circlepath.doc.on.clipboard"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowTriangleBranch = "arrow.triangle.branch"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowTriangleCapsulepath = "arrow.triangle.capsulepath"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowTriangleMerge = "arrow.triangle.merge"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowTrianglePull = "arrow.triangle.pull"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowTriangleSwap = "arrow.triangle.swap"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowTriangleTurnUpRightCircle = "arrow.triangle.turn.up.right.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowTriangleTurnUpRightCircleFill = "arrow.triangle.turn.up.right.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowTriangleTurnUpRightDiamond = "arrow.triangle.turn.up.right.diamond"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowTriangleTurnUpRightDiamondFill = "arrow.triangle.turn.up.right.diamond.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowTurnUpForwardIphone = "arrow.turn.up.forward.iphone"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowTurnUpForwardIphoneFill = "arrow.turn.up.forward.iphone.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowUpAndDownAndArrowLeftAndRight = "arrow.up.and.down.and.arrow.left.and.right"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowUpAndDownRighttriangleUpFillRighttriangleDownFill = "arrow.up.and.down.righttriangle.up.fill.righttriangle.down.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowUpAndDownRighttriangleUpRighttriangleDown = "arrow.up.and.down.righttriangle.up.righttriangle.down"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowUpAndPersonRectanglePortrait = "arrow.up.and.person.rectangle.portrait"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowUpAndPersonRectangleTurnLeft = "arrow.up.and.person.rectangle.turn.left"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowUpAndPersonRectangleTurnRight = "arrow.up.and.person.rectangle.turn.right"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowUpBackward = "arrow.up.backward"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowUpBackwardAndArrowDownForward = "arrow.up.backward.and.arrow.down.forward"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowUpBackwardAndArrowDownForwardCircle = "arrow.up.backward.and.arrow.down.forward.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowUpBackwardAndArrowDownForwardCircleFill = "arrow.up.backward.and.arrow.down.forward.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowUpBackwardCircle = "arrow.up.backward.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowUpBackwardCircleFill = "arrow.up.backward.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowUpBackwardSquare = "arrow.up.backward.square"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowUpBackwardSquareFill = "arrow.up.backward.square.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowUpDocOnClipboard = "arrow.up.doc.on.clipboard"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowUpForward = "arrow.up.forward"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowUpForwardApp = "arrow.up.forward.app"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowUpForwardAppFill = "arrow.up.forward.app.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowUpForwardCircle = "arrow.up.forward.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowUpForwardCircleFill = "arrow.up.forward.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowUpForwardSquare = "arrow.up.forward.square"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowUpForwardSquareFill = "arrow.up.forward.square.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowUpHeart = "arrow.up.heart"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowUpHeartFill = "arrow.up.heart.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowUpLeftAndArrowDownRightCircle = "arrow.up.left.and.arrow.down.right.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowUpLeftAndArrowDownRightCircleFill = "arrow.up.left.and.arrow.down.right.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowUpLeftAndDownRightAndArrowUpRightAndDownLeft = "arrow.up.left.and.down.right.and.arrow.up.right.and.down.left"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowUpLeftAndDownRightMagnifyingglass = "arrow.up.left.and.down.right.magnifyingglass"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowUpMessage = "arrow.up.message"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowUpMessageFill = "arrow.up.message.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowUpRightAndArrowDownLeftRectangle = "arrow.up.right.and.arrow.down.left.rectangle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowUpRightAndArrowDownLeftRectangleFill = "arrow.up.right.and.arrow.down.left.rectangle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowUturnBackward = "arrow.uturn.backward"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowUturnBackwardCircle = "arrow.uturn.backward.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowUturnBackwardCircleBadgeEllipsis = "arrow.uturn.backward.circle.badge.ellipsis"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowUturnBackwardCircleFill = "arrow.uturn.backward.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowUturnBackwardSquare = "arrow.uturn.backward.square"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowUturnBackwardSquareFill = "arrow.uturn.backward.square.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowUturnForward = "arrow.uturn.forward"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowUturnForwardCircle = "arrow.uturn.forward.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowUturnForwardCircleFill = "arrow.uturn.forward.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowUturnForwardSquare = "arrow.uturn.forward.square"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowUturnForwardSquareFill = "arrow.uturn.forward.square.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowshapeBounceForward = "arrowshape.bounce.forward"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowshapeBounceForwardFill = "arrowshape.bounce.forward.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowshapeBounceRight = "arrowshape.bounce.right"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowshapeBounceRightFill = "arrowshape.bounce.right.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowshapeTurnUpBackward = "arrowshape.turn.up.backward"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowshapeTurnUpBackward2 = "arrowshape.turn.up.backward.2"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowshapeTurnUpBackward2Circle = "arrowshape.turn.up.backward.2.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowshapeTurnUpBackward2CircleFill = "arrowshape.turn.up.backward.2.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowshapeTurnUpBackward2Fill = "arrowshape.turn.up.backward.2.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowshapeTurnUpBackwardCircle = "arrowshape.turn.up.backward.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowshapeTurnUpBackwardCircleFill = "arrowshape.turn.up.backward.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowshapeTurnUpBackwardFill = "arrowshape.turn.up.backward.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowshapeTurnUpForward = "arrowshape.turn.up.forward"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowshapeTurnUpForwardCircle = "arrowshape.turn.up.forward.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowshapeTurnUpForwardCircleFill = "arrowshape.turn.up.forward.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowshapeTurnUpForwardFill = "arrowshape.turn.up.forward.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowshapeTurnUpLeft2Circle = "arrowshape.turn.up.left.2.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowshapeTurnUpLeft2CircleFill = "arrowshape.turn.up.left.2.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowshapeZigzagForward = "arrowshape.zigzag.forward"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowshapeZigzagForwardFill = "arrowshape.zigzag.forward.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowshapeZigzagRight = "arrowshape.zigzag.right"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowshapeZigzagRightFill = "arrowshape.zigzag.right.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowtriangleBackward = "arrowtriangle.backward"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowtriangleBackwardCircle = "arrowtriangle.backward.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowtriangleBackwardCircleFill = "arrowtriangle.backward.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowtriangleBackwardFill = "arrowtriangle.backward.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowtriangleBackwardSquare = "arrowtriangle.backward.square"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowtriangleBackwardSquareFill = "arrowtriangle.backward.square.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowtriangleForward = "arrowtriangle.forward"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowtriangleForwardCircle = "arrowtriangle.forward.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowtriangleForwardCircleFill = "arrowtriangle.forward.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowtriangleForwardFill = "arrowtriangle.forward.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowtriangleForwardSquare = "arrowtriangle.forward.square"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowtriangleForwardSquareFill = "arrowtriangle.forward.square.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowtriangleLeftAndLineVerticalAndArrowtriangleRight = "arrowtriangle.left.and.line.vertical.and.arrowtriangle.right"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowtriangleLeftFillAndLineVerticalAndArrowtriangleRightFill = "arrowtriangle.left.fill.and.line.vertical.and.arrowtriangle.right.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowtriangleRightAndLineVerticalAndArrowtriangleLeft = "arrowtriangle.right.and.line.vertical.and.arrowtriangle.left"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case arrowtriangleRightFillAndLineVerticalAndArrowtriangleLeftFill = "arrowtriangle.right.fill.and.line.vertical.and.arrowtriangle.left.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case atCircle = "at.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case atCircleFill = "at.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case atom = "atom"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case backwardFrame = "backward.frame"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case backwardFrameFill = "backward.frame.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case badgePlusRadiowavesForward = "badge.plus.radiowaves.forward"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case bagCircle = "bag.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case bagCircleFill = "bag.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case banknote = "banknote"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case banknoteFill = "banknote.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case barometer = "barometer"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case battery100Bolt = "battery.100.bolt"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case bellBadge = "bell.badge"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case bellBadgeFill = "bell.badge.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case bellSlashCircle = "bell.slash.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case bellSlashCircleFill = "bell.slash.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case bicycle = "bicycle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case bicycleCircle = "bicycle.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case bicycleCircleFill = "bicycle.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case binoculars = "binoculars"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case binocularsFill = "binoculars.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case boltCar = "bolt.car"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case boltCarFill = "bolt.car.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case boltFillBatteryblock = "bolt.fill.batteryblock"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case boltFillBatteryblockFill = "bolt.fill.batteryblock.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case boltHeart = "bolt.heart"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case boltHeartFill = "bolt.heart.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case boltSlashCircle = "bolt.slash.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case boltSlashCircleFill = "bolt.slash.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case bonjour = "bonjour"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case bookClosed = "book.closed"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case bookClosedFill = "book.closed.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case bookmarkCircle = "bookmark.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case bookmarkCircleFill = "bookmark.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case bookmarkSlash = "bookmark.slash"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case bookmarkSlashFill = "bookmark.slash.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case booksVertical = "books.vertical"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case booksVerticalFill = "books.vertical.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case building = "building"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case building2 = "building.2"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case building2CropCircle = "building.2.crop.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case building2CropCircleFill = "building.2.crop.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case building2Fill = "building.2.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case buildingColumns = "building.columns"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case buildingColumnsFill = "building.columns.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case buildingFill = "building.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case bus = "bus"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case busDoubledecker = "bus.doubledecker"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case busDoubledeckerFill = "bus.doubledecker.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case busFill = "bus.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case calendarBadgeClock = "calendar.badge.clock"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case calendarBadgeExclamationmark = "calendar.badge.exclamationmark"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case cameraAperture = "camera.aperture"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case cameraBadgeEllipsis = "camera.badge.ellipsis"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case cameraFillBadgeEllipsis = "camera.fill.badge.ellipsis"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case cameraFilters = "camera.filters"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case cameraMeteringCenterWeighted = "camera.metering.center.weighted"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case cameraMeteringCenterWeightedAverage = "camera.metering.center.weighted.average"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case cameraMeteringMatrix = "camera.metering.matrix"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case cameraMeteringMultispot = "camera.metering.multispot"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case cameraMeteringNone = "camera.metering.none"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case cameraMeteringPartial = "camera.metering.partial"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case cameraMeteringSpot = "camera.metering.spot"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case cameraMeteringUnknown = "camera.metering.unknown"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case candybarphone = "candybarphone"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case capsulePortrait = "capsule.portrait"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case capsulePortraitFill = "capsule.portrait.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case car2 = "car.2"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case car2Fill = "car.2.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case carCircle = "car.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case carCircleFill = "car.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case `case` = "case"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case caseFill = "case.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case chartBarDocHorizontal = "chart.bar.doc.horizontal"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case chartBarDocHorizontalFill = "chart.bar.doc.horizontal.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case chartBarXaxis = "chart.bar.xaxis"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case checkerboardRectangle = "checkerboard.rectangle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case checkmarkIcloud = "checkmark.icloud"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case checkmarkIcloudFill = "checkmark.icloud.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case checkmarkRectanglePortrait = "checkmark.rectangle.portrait"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case checkmarkRectanglePortraitFill = "checkmark.rectangle.portrait.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case chevronBackward = "chevron.backward"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case chevronBackward2 = "chevron.backward.2"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case chevronBackwardCircle = "chevron.backward.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case chevronBackwardCircleFill = "chevron.backward.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case chevronBackwardSquare = "chevron.backward.square"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case chevronBackwardSquareFill = "chevron.backward.square.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case chevronForward = "chevron.forward"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case chevronForward2 = "chevron.forward.2"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case chevronForwardCircle = "chevron.forward.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case chevronForwardCircleFill = "chevron.forward.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case chevronForwardSquare = "chevron.forward.square"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case chevronForwardSquareFill = "chevron.forward.square.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case circleBottomhalfFill = "circle.bottomhalf.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case circleCircle = "circle.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case circleCircleFill = "circle.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case circleDashed = "circle.dashed"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case circleDashedInsetFill = "circle.dashed.inset.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case circleFillSquareFill = "circle.fill.square.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case circleGridCross = "circle.grid.cross"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case circleGridCrossDownFill = "circle.grid.cross.down.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case circleGridCrossFill = "circle.grid.cross.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case circleGridCrossLeftFill = "circle.grid.cross.left.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case circleGridCrossRightFill = "circle.grid.cross.right.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case circleGridCrossUpFill = "circle.grid.cross.up.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case circleSquare = "circle.square"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case circleTophalfFill = "circle.tophalf.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case circlebadge = "circlebadge"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case circlebadge2 = "circlebadge.2"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case circlebadge2Fill = "circlebadge.2.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case circlebadgeFill = "circlebadge.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case circlesHexagongrid = "circles.hexagongrid"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case circlesHexagongridFill = "circles.hexagongrid.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case circlesHexagonpath = "circles.hexagonpath"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case circlesHexagonpathFill = "circles.hexagonpath.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case clockArrowCirclepath = "clock.arrow.circlepath"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case comb = "comb"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case combFill = "comb.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case commandCircle = "command.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case commandCircleFill = "command.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case commandSquare = "command.square"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case commandSquareFill = "command.square.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case cone = "cone"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case coneFill = "cone.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case contextualmenuAndCursorarrow = "contextualmenu.and.cursorarrow"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case cpu = "cpu"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case creditcardCircle = "creditcard.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case creditcardCircleFill = "creditcard.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case cross = "cross"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case crossCase = "cross.case"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case crossCaseFill = "cross.case.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case crossCircle = "cross.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case crossCircleFill = "cross.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case crossFill = "cross.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case crown = "crown"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case crownFill = "crown.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case cubeTransparent = "cube.transparent"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case cubeTransparentFill = "cube.transparent.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case curlybraces = "curlybraces"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case curlybracesSquare = "curlybraces.square"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case curlybracesSquareFill = "curlybraces.square.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case cursorarrow = "cursorarrow"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case cursorarrowAndSquareOnSquareDashed = "cursorarrow.and.square.on.square.dashed"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case cursorarrowClick = "cursorarrow.click"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case cursorarrowClick2 = "cursorarrow.click.2"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case cursorarrowClickBadgeClock = "cursorarrow.click.badge.clock"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case cursorarrowMotionlines = "cursorarrow.motionlines"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case cursorarrowMotionlinesClick = "cursorarrow.motionlines.click"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case cursorarrowRays = "cursorarrow.rays"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case cursorarrowSquare = "cursorarrow.square"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case cylinder = "cylinder"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case cylinderFill = "cylinder.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case cylinderSplit1x2 = "cylinder.split.1x2"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case cylinderSplit1x2Fill = "cylinder.split.1x2.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case deskclock = "deskclock"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case deskclockFill = "deskclock.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case dialMax = "dial.max"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case dialMaxFill = "dial.max.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case dialMin = "dial.min"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case dialMinFill = "dial.min.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case diamond = "diamond"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case diamondFill = "diamond.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case dieFace1 = "die.face.1"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case dieFace1Fill = "die.face.1.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case dieFace2 = "die.face.2"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case dieFace2Fill = "die.face.2.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case dieFace3 = "die.face.3"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case dieFace3Fill = "die.face.3.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case dieFace4 = "die.face.4"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case dieFace4Fill = "die.face.4.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case dieFace5 = "die.face.5"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case dieFace5Fill = "die.face.5.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case dieFace6 = "die.face.6"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case dieFace6Fill = "die.face.6.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case display = "display"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case display2 = "display.2"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case displayTrianglebadgeExclamationmark = "display.trianglebadge.exclamationmark"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case docAppendFill = "doc.append.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case docBadgeEllipsis = "doc.badge.ellipsis"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case docBadgeGearshape = "doc.badge.gearshape"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case docBadgeGearshapeFill = "doc.badge.gearshape.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case docBadgePlus = "doc.badge.plus"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case docFillBadgeEllipsis = "doc.fill.badge.ellipsis"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case docFillBadgePlus = "doc.fill.badge.plus"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case docPlaintextFill = "doc.plaintext.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case docRichtextFill = "doc.richtext.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case docTextBelowEcg = "doc.text.below.ecg"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case docTextBelowEcgFill = "doc.text.below.ecg.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case docTextFillViewfinder = "doc.text.fill.viewfinder"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case docZipper = "doc.zipper"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case dockArrowDownRectangle = "dock.arrow.down.rectangle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case dockArrowUpRectangle = "dock.arrow.up.rectangle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case dockRectangle = "dock.rectangle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case dotArrowtrianglesUpRightDownLeftCircle = "dot.arrowtriangles.up.right.down.left.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case dotCircleAndCursorarrow = "dot.circle.and.cursorarrow"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case dotRadiowavesForward = "dot.radiowaves.forward"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case dotSquareshape = "dot.squareshape"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case dotSquareshapeFill = "dot.squareshape.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case dotSquareshapeSplit2x2 = "dot.squareshape.split.2x2"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case dpad = "dpad"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case dpadDownFill = "dpad.down.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case dpadFill = "dpad.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case dpadLeftFill = "dpad.left.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case dpadRightFill = "dpad.right.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case dpadUpFill = "dpad.up.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case drop = "drop"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case dropFill = "drop.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case earBadgeCheckmark = "ear.badge.checkmark"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case earFill = "ear.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case earTrianglebadgeExclamationmark = "ear.trianglebadge.exclamationmark"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case earpods = "earpods"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case ejectCircle = "eject.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case ejectCircleFill = "eject.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case ellipsisBubble = "ellipsis.bubble"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case ellipsisBubbleFill = "ellipsis.bubble.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case ellipsisRectangle = "ellipsis.rectangle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case ellipsisRectangleFill = "ellipsis.rectangle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case envelopeArrowTriangleBranch = "envelope.arrow.triangle.branch"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case envelopeArrowTriangleBranchFill = "envelope.arrow.triangle.branch.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case envelopeBadgeShieldLeadinghalfFill = "envelope.badge.shield.leadinghalf.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case envelopeFillBadgeShieldTrailinghalfFill = "envelope.fill.badge.shield.trailinghalf.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case esim = "esim"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case esimFill = "esim.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case exclamationmark2 = "exclamationmark.2"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case exclamationmark3 = "exclamationmark.3"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case exclamationmarkArrowCirclepath = "exclamationmark.arrow.circlepath"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case exclamationmarkArrowTriangle2Circlepath = "exclamationmark.arrow.triangle.2.circlepath"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case externaldrive = "externaldrive"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case externaldriveBadgeCheckmark = "externaldrive.badge.checkmark"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case externaldriveBadgeIcloud = "externaldrive.badge.icloud"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case externaldriveBadgeMinus = "externaldrive.badge.minus"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case externaldriveBadgePersonCrop = "externaldrive.badge.person.crop"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case externaldriveBadgePlus = "externaldrive.badge.plus"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case externaldriveBadgeTimemachine = "externaldrive.badge.timemachine"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case externaldriveBadgeWifi = "externaldrive.badge.wifi"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case externaldriveBadgeXmark = "externaldrive.badge.xmark"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case externaldriveConnectedToLineBelow = "externaldrive.connected.to.line.below"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case externaldriveConnectedToLineBelowFill = "externaldrive.connected.to.line.below.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case externaldriveFill = "externaldrive.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case externaldriveFillBadgeCheckmark = "externaldrive.fill.badge.checkmark"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case externaldriveFillBadgeIcloud = "externaldrive.fill.badge.icloud"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case externaldriveFillBadgeMinus = "externaldrive.fill.badge.minus"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case externaldriveFillBadgePersonCrop = "externaldrive.fill.badge.person.crop"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case externaldriveFillBadgePlus = "externaldrive.fill.badge.plus"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case externaldriveFillBadgeTimemachine = "externaldrive.fill.badge.timemachine"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case externaldriveFillBadgeWifi = "externaldrive.fill.badge.wifi"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case externaldriveFillBadgeXmark = "externaldrive.fill.badge.xmark"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case eyeCircle = "eye.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case eyeCircleFill = "eye.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case eyebrow = "eyebrow"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case eyes = "eyes"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case eyesInverse = "eyes.inverse"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case faceDashed = "face.dashed"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case faceDashedFill = "face.dashed.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case faceSmiling = "face.smiling"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case faceSmilingFill = "face.smiling.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case faxmachine = "faxmachine"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case fiberchannel = "fiberchannel"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case figureStand = "figure.stand"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case figureStandLineDottedFigureStand = "figure.stand.line.dotted.figure.stand"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case figureWalk = "figure.walk"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case figureWalkCircle = "figure.walk.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case figureWalkCircleFill = "figure.walk.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case figureWalkDiamond = "figure.walk.diamond"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case figureWalkDiamondFill = "figure.walk.diamond.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case figureWave = "figure.wave"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case figureWaveCircle = "figure.wave.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case figureWaveCircleFill = "figure.wave.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case filemenuAndCursorarrow = "filemenu.and.cursorarrow"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case filemenuAndSelection = "filemenu.and.selection"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case flagBadgeEllipsis = "flag.badge.ellipsis"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case flagBadgeEllipsisFill = "flag.badge.ellipsis.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case flagSlashCircle = "flag.slash.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case flagSlashCircleFill = "flag.slash.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case flipphone = "flipphone"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case fn = "fn"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case folderBadgeGear = "folder.badge.gear"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case folderBadgeQuestionmark = "folder.badge.questionmark"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case folderFillBadgeGear = "folder.fill.badge.gear"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case folderFillBadgeQuestionmark = "folder.fill.badge.questionmark"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case forwardFrame = "forward.frame"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case forwardFrameFill = "forward.frame.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case gearshape = "gearshape"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case gearshape2 = "gearshape.2"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case gearshape2Fill = "gearshape.2.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case gearshapeFill = "gearshape.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case giftCircle = "gift.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case giftCircleFill = "gift.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case giftcard = "giftcard"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case giftcardFill = "giftcard.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case graduationcap = "graduationcap"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case graduationcapFill = "graduationcap.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case greetingcard = "greetingcard"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case greetingcardFill = "greetingcard.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case guitarsFill = "guitars.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case gyroscope = "gyroscope"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case hSquareFillOnSquareFill = "h.square.fill.on.square.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case hSquareOnSquare = "h.square.on.square"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case handPointDown = "hand.point.down"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case handPointDownFill = "hand.point.down.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case handPointUp = "hand.point.up"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case handPointUpBraille = "hand.point.up.braille"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case handPointUpBrailleFill = "hand.point.up.braille.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case handPointUpFill = "hand.point.up.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case handPointUpLeft = "hand.point.up.left"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case handPointUpLeftFill = "hand.point.up.left.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case handTap = "hand.tap"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case handTapFill = "hand.tap.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case handWave = "hand.wave"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case handWaveFill = "hand.wave.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case handsClap = "hands.clap"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case handsClapFill = "hands.clap.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case handsSparkles = "hands.sparkles"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case handsSparklesFill = "hands.sparkles.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case headphonesCircle = "headphones.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case headphonesCircleFill = "headphones.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case hearingaidEar = "hearingaid.ear"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case heartTextSquare = "heart.text.square"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case heartTextSquareFill = "heart.text.square.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case hifispeaker2 = "hifispeaker.2"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case hifispeaker2Fill = "hifispeaker.2.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case hifispeakerAndHomepod = "hifispeaker.and.homepod"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case hifispeakerAndHomepodFill = "hifispeaker.and.homepod.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case highlighter = "highlighter"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case homekit = "homekit"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case homepod = "homepod"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case homepod2 = "homepod.2"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case homepod2Fill = "homepod.2.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case homepodFill = "homepod.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case hourglassBadgePlus = "hourglass.badge.plus"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case houseCircle = "house.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case houseCircleFill = "house.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case infinity = "infinity"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case internaldrive = "internaldrive"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case internaldriveFill = "internaldrive.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case ipad = "ipad"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case ipadHomebutton = "ipad.homebutton"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case ipadHomebuttonLandscape = "ipad.homebutton.landscape"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case ipadLandscape = "ipad.landscape"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case iphone = "iphone"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case iphoneHomebutton = "iphone.homebutton"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case iphoneHomebuttonRadiowavesLeftAndRight = "iphone.homebutton.radiowaves.left.and.right"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case iphoneHomebuttonSlash = "iphone.homebutton.slash"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case iphoneRadiowavesLeftAndRight = "iphone.radiowaves.left.and.right"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case iphoneSlash = "iphone.slash"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case ipod = "ipod"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case ipodshuffleGen1 = "ipodshuffle.gen1"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case ipodshuffleGen2 = "ipodshuffle.gen2"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case ipodshuffleGen3 = "ipodshuffle.gen3"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case ipodshuffleGen4 = "ipodshuffle.gen4"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case ipodtouch = "ipodtouch"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case jSquareFillOnSquareFill = "j.square.fill.on.square.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case jSquareOnSquare = "j.square.on.square"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case k = "k"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case key = "key"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case keyFill = "key.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case keyIcloud = "key.icloud"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case keyIcloudFill = "key.icloud.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case keyboardBadgeEllipsis = "keyboard.badge.ellipsis"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case keyboardChevronCompactLeft = "keyboard.chevron.compact.left"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case keyboardMacwindow = "keyboard.macwindow"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case keyboardOnehandedLeft = "keyboard.onehanded.left"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case keyboardOnehandedRight = "keyboard.onehanded.right"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case lJoystick = "l.joystick"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case lJoystickDown = "l.joystick.down"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case lJoystickDownFill = "l.joystick.down.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case lJoystickFill = "l.joystick.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case lRectangleRoundedbottom = "l.rectangle.roundedbottom"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case lRectangleRoundedbottomFill = "l.rectangle.roundedbottom.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case l1RectangleRoundedbottom = "l1.rectangle.roundedbottom"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case l1RectangleRoundedbottomFill = "l1.rectangle.roundedbottom.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case l2RectangleRoundedtop = "l2.rectangle.roundedtop"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case l2RectangleRoundedtopFill = "l2.rectangle.roundedtop.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case ladybug = "ladybug"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case ladybugFill = "ladybug.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case laptopcomputer = "laptopcomputer"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case laptopcomputerAndIphone = "laptopcomputer.and.iphone"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case lassoSparkles = "lasso.sparkles"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case latch2Case = "latch.2.case"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case latch2CaseFill = "latch.2.case.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case lbRectangleRoundedbottom = "lb.rectangle.roundedbottom"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case lbRectangleRoundedbottomFill = "lb.rectangle.roundedbottom.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case leaf = "leaf"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case leafArrowTriangleCirclepath = "leaf.arrow.triangle.circlepath"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case leafFill = "leaf.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case level = "level"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case levelFill = "level.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case lifepreserver = "lifepreserver"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case lifepreserverFill = "lifepreserver.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case line3CrossedSwirlCircle = "line.3.crossed.swirl.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case line3CrossedSwirlCircleFill = "line.3.crossed.swirl.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case lineDiagonal = "line.diagonal"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case lineDiagonalArrow = "line.diagonal.arrow"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case lineHorizontal2DecreaseCircle = "line.horizontal.2.decrease.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case lineHorizontal2DecreaseCircleFill = "line.horizontal.2.decrease.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case lineHorizontal3Circle = "line.horizontal.3.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case lineHorizontal3CircleFill = "line.horizontal.3.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case lineHorizontalStarFillLineHorizontal = "line.horizontal.star.fill.line.horizontal"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case lineweight = "lineweight"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case linkBadgePlus = "link.badge.plus"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case listAndFilm = "list.and.film"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case listBulletRectangle = "list.bullet.rectangle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case listStar = "list.star"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case listTriangle = "list.triangle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case livephotoBadgeA = "livephoto.badge.a"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case locationFillViewfinder = "location.fill.viewfinder"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case locationViewfinder = "location.viewfinder"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case lockDoc = "lock.doc"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case lockDocFill = "lock.doc.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case lockRectangle = "lock.rectangle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case lockRectangleFill = "lock.rectangle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case lockRectangleOnRectangle = "lock.rectangle.on.rectangle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case lockRectangleOnRectangleFill = "lock.rectangle.on.rectangle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case lockRectangleStack = "lock.rectangle.stack"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case lockRectangleStackFill = "lock.rectangle.stack.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case lockSquare = "lock.square"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case lockSquareFill = "lock.square.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case lockSquareStack = "lock.square.stack"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case lockSquareStackFill = "lock.square.stack.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case loupe = "loupe"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case ltRectangleRoundedtop = "lt.rectangle.roundedtop"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case ltRectangleRoundedtopFill = "lt.rectangle.roundedtop.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case lungs = "lungs"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case lungsFill = "lungs.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case macmini = "macmini"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case macminiFill = "macmini.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case macproGen1 = "macpro.gen1"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case macproGen2 = "macpro.gen2"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case macproGen2Fill = "macpro.gen2.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case macproGen3 = "macpro.gen3"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case macproGen3Server = "macpro.gen3.server"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case macwindowBadgePlus = "macwindow.badge.plus"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case macwindowOnRectangle = "macwindow.on.rectangle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case mail = "mail"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case mailAndTextMagnifyingglass = "mail.and.text.magnifyingglass"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case mailFill = "mail.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case mailStack = "mail.stack"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case mailStackFill = "mail.stack.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case megaphone = "megaphone"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case megaphoneFill = "megaphone.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case memorychip = "memorychip"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case menubarArrowDownRectangle = "menubar.arrow.down.rectangle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case menubarArrowUpRectangle = "menubar.arrow.up.rectangle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case menubarDockRectangle = "menubar.dock.rectangle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case menubarDockRectangleBadgeRecord = "menubar.dock.rectangle.badge.record"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case menubarRectangle = "menubar.rectangle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case metronomeFill = "metronome.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case minusDiamond = "minus.diamond"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case minusDiamondFill = "minus.diamond.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case minusPlusBatteryblock = "minus.plus.batteryblock"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case minusPlusBatteryblockFill = "minus.plus.batteryblock.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case minusRectanglePortrait = "minus.rectangle.portrait"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case minusRectanglePortraitFill = "minus.rectangle.portrait.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case mosaic = "mosaic"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case mosaicFill = "mosaic.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case mount = "mount"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case mountFill = "mount.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case mouth = "mouth"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case mouthFill = "mouth.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case move3d = "move.3d"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case musicNoteHouse = "music.note.house"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case musicNoteHouseFill = "music.note.house.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case musicQuarternote3 = "music.quarternote.3"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case mustache = "mustache"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case mustacheFill = "mustache.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case network = "network"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case newspaper = "newspaper"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case newspaperFill = "newspaper.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case nose = "nose"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case noseFill = "nose.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case note = "note"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case noteText = "note.text"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case noteTextBadgePlus = "note.text.badge.plus"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case octagon = "octagon"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case octagonFill = "octagon.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case opticaldisc = "opticaldisc"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case opticaldiscdrive = "opticaldiscdrive"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case opticaldiscdriveFill = "opticaldiscdrive.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case oval = "oval"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case ovalFill = "oval.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case ovalPortrait = "oval.portrait"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case ovalPortraitFill = "oval.portrait.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case paintbrushPointed = "paintbrush.pointed"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case paintbrushPointedFill = "paintbrush.pointed.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case paintpalette = "paintpalette"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case paintpaletteFill = "paintpalette.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case paperclipBadgeEllipsis = "paperclip.badge.ellipsis"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case paperplaneCircle = "paperplane.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case paperplaneCircleFill = "paperplane.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case paragraphsign = "paragraphsign"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case pc = "pc"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case pencilTipCropCircleBadgeArrowForward = "pencil.tip.crop.circle.badge.arrow.forward"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case person2Circle = "person.2.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case person2CircleFill = "person.2.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case personAndArrowLeftAndArrowRight = "person.and.arrow.left.and.arrow.right"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case personCropCircleBadgeExclamationmark = "person.crop.circle.badge.exclamationmark"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case personCropCircleBadgeQuestionmark = "person.crop.circle.badge.questionmark"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case personCropCircleFillBadgeExclamationmark = "person.crop.circle.fill.badge.exclamationmark"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case personCropCircleFillBadgeQuestionmark = "person.crop.circle.fill.badge.questionmark"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case personCropSquareFillAndAtRectangle = "person.crop.square.fill.and.at.rectangle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case personFillAndArrowLeftAndArrowRight = "person.fill.and.arrow.left.and.arrow.right"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case personFillBadgeMinus = "person.fill.badge.minus"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case personFillBadgePlus = "person.fill.badge.plus"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case personFillCheckmark = "person.fill.checkmark"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case personFillQuestionmark = "person.fill.questionmark"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case personFillTurnDown = "person.fill.turn.down"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case personFillTurnLeft = "person.fill.turn.left"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case personFillTurnRight = "person.fill.turn.right"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case personFillViewfinder = "person.fill.viewfinder"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case personFillXmark = "person.fill.xmark"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case phoneBubbleLeft = "phone.bubble.left"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case phoneBubbleLeftFill = "phone.bubble.left.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case phoneConnection = "phone.connection"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case phoneFillConnection = "phone.fill.connection"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case photoOnRectangleAngled = "photo.on.rectangle.angled"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case pianokeys = "pianokeys"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case pianokeysInverse = "pianokeys.inverse"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case pills = "pills"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case pillsFill = "pills.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case pip = "pip"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case pipEnter = "pip.enter"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case pipExit = "pip.exit"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case pipFill = "pip.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case pipRemove = "pip.remove"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case pipSwap = "pip.swap"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case placeholdertextFill = "placeholdertext.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case playSlash = "play.slash"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case playSlashFill = "play.slash.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case plusDiamond = "plus.diamond"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case plusDiamondFill = "plus.diamond.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case plusMessage = "plus.message"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case plusMessageFill = "plus.message.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case plusRectangleFillOnFolderFill = "plus.rectangle.fill.on.folder.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case plusRectangleOnFolder = "plus.rectangle.on.folder"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case plusRectanglePortrait = "plus.rectangle.portrait"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case plusRectanglePortraitFill = "plus.rectangle.portrait.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case plusViewfinder = "plus.viewfinder"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case pointFillTopleftDownCurvedtoPointFillBottomrightUp = "point.fill.topleft.down.curvedto.point.fill.bottomright.up"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case pointTopleftDownCurvedtoPointBottomrightUp = "point.topleft.down.curvedto.point.bottomright.up"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case poweroff = "poweroff"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case poweron = "poweron"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case powersleep = "powersleep"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case printerDotmatrix = "printer.dotmatrix"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case printerDotmatrixFill = "printer.dotmatrix.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case printerDotmatrixFillAndPaperFill = "printer.dotmatrix.fill.and.paper.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case printerFillAndPaperFill = "printer.fill.and.paper.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case puzzlepiece = "puzzlepiece"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case puzzlepieceFill = "puzzlepiece.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case pyramid = "pyramid"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case pyramidFill = "pyramid.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case questionmarkFolder = "questionmark.folder"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case questionmarkFolderFill = "questionmark.folder.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case questionmarkSquareDashed = "questionmark.square.dashed"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rJoystick = "r.joystick"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rJoystickDown = "r.joystick.down"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rJoystickDownFill = "r.joystick.down.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rJoystickFill = "r.joystick.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rRectangleRoundedbottom = "r.rectangle.roundedbottom"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rRectangleRoundedbottomFill = "r.rectangle.roundedbottom.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rSquareFillOnSquareFill = "r.square.fill.on.square.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rSquareOnSquare = "r.square.on.square"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case r1RectangleRoundedbottom = "r1.rectangle.roundedbottom"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case r1RectangleRoundedbottomFill = "r1.rectangle.roundedbottom.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case r2RectangleRoundedtop = "r2.rectangle.roundedtop"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case r2RectangleRoundedtopFill = "r2.rectangle.roundedtop.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case radio = "radio"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case radioFill = "radio.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rbRectangleRoundedbottom = "rb.rectangle.roundedbottom"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rbRectangleRoundedbottomFill = "rb.rectangle.roundedbottom.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case recordCircle = "record.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case recordCircleFill = "record.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rectangle3OffgridBubbleLeft = "rectangle.3.offgrid.bubble.left"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rectangle3OffgridBubbleLeftFill = "rectangle.3.offgrid.bubble.left.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rectangleAndPencilAndEllipsis = "rectangle.and.pencil.and.ellipsis"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rectangleAndTextMagnifyingglass = "rectangle.and.text.magnifyingglass"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rectangleArrowtriangle2Inward = "rectangle.arrowtriangle.2.inward"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rectangleArrowtriangle2Outward = "rectangle.arrowtriangle.2.outward"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rectangleBadgeMinus = "rectangle.badge.minus"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rectangleBadgePlus = "rectangle.badge.plus"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rectangleBottomthirdInsetFill = "rectangle.bottomthird.inset.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rectangleCenterInsetFill = "rectangle.center.inset.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rectangleConnectedToLineBelow = "rectangle.connected.to.line.below"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rectangleDashed = "rectangle.dashed"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rectangleDashedAndPaperclip = "rectangle.dashed.and.paperclip"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rectangleDashedBadgeRecord = "rectangle.dashed.badge.record"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rectangleFillBadgeMinus = "rectangle.fill.badge.minus"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rectangleFillBadgePlus = "rectangle.fill.badge.plus"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rectangleFillOnRectangleFillCircle = "rectangle.fill.on.rectangle.fill.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rectangleFillOnRectangleFillCircleFill = "rectangle.fill.on.rectangle.fill.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rectangleFillOnRectangleFillSlashFill = "rectangle.fill.on.rectangle.fill.slash.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rectangleInsetBottomleftFill = "rectangle.inset.bottomleft.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rectangleInsetBottomrightFill = "rectangle.inset.bottomright.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rectangleInsetFill = "rectangle.inset.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rectangleInsetTopleftFill = "rectangle.inset.topleft.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rectangleInsetToprightFill = "rectangle.inset.topright.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rectangleLefthalfFill = "rectangle.lefthalf.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rectangleLefthalfInsetFill = "rectangle.lefthalf.inset.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rectangleLefthalfInsetFillArrowLeft = "rectangle.lefthalf.inset.fill.arrow.left"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rectangleLeftthirdInsetFill = "rectangle.leftthird.inset.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rectangleOnRectangleSlash = "rectangle.on.rectangle.slash"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rectanglePortrait = "rectangle.portrait"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rectanglePortraitArrowtriangle2Inward = "rectangle.portrait.arrowtriangle.2.inward"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rectanglePortraitArrowtriangle2Outward = "rectangle.portrait.arrowtriangle.2.outward"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rectanglePortraitFill = "rectangle.portrait.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rectangleRighthalfFill = "rectangle.righthalf.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rectangleRighthalfInsetFill = "rectangle.righthalf.inset.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rectangleRighthalfInsetFillArrowRight = "rectangle.righthalf.inset.fill.arrow.right"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rectangleRightthirdInsetFill = "rectangle.rightthird.inset.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rectangleRoundedbottom = "rectangle.roundedbottom"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rectangleRoundedbottomFill = "rectangle.roundedbottom.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rectangleRoundedtop = "rectangle.roundedtop"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rectangleRoundedtopFill = "rectangle.roundedtop.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rectangleSlash = "rectangle.slash"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rectangleSlashFill = "rectangle.slash.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rectangleSplit1x2 = "rectangle.split.1x2"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rectangleSplit1x2Fill = "rectangle.split.1x2.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rectangleSplit2x1 = "rectangle.split.2x1"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rectangleSplit2x1Fill = "rectangle.split.2x1.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rectangleSplit2x2 = "rectangle.split.2x2"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rectangleSplit2x2Fill = "rectangle.split.2x2.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case restart = "restart"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case restartCircle = "restart.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rotate3d = "rotate.3d"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rtRectangleRoundedtop = "rt.rectangle.roundedtop"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rtRectangleRoundedtopFill = "rt.rectangle.roundedtop.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case ruler = "ruler"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case rulerFill = "ruler.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case scale3d = "scale.3d"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case scalemass = "scalemass"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case scalemassFill = "scalemass.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case scanner = "scanner"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case scannerFill = "scanner.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case scribbleVariable = "scribble.variable"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case scroll = "scroll"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case scrollFill = "scroll.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case sdcard = "sdcard"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case sdcardFill = "sdcard.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case seal = "seal"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case sealFill = "seal.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case serverRack = "server.rack"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case shadow = "shadow"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case shekelsignCircle = "shekelsign.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case shekelsignCircleFill = "shekelsign.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case shekelsignSquare = "shekelsign.square"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case shekelsignSquareFill = "shekelsign.square.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case shieldLefthalfFillSlash = "shield.lefthalf.fill.slash"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case shippingbox = "shippingbox"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case shippingboxFill = "shippingbox.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case sidebarLeading = "sidebar.leading"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case sidebarSquaresLeading = "sidebar.squares.leading"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case sidebarSquaresLeft = "sidebar.squares.left"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case sidebarSquaresRight = "sidebar.squares.right"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case sidebarSquaresTrailing = "sidebar.squares.trailing"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case sidebarTrailing = "sidebar.trailing"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case signpostLeft = "signpost.left"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case signpostLeftFill = "signpost.left.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case signpostRight = "signpost.right"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case signpostRightFill = "signpost.right.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case simcard = "simcard"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case simcard2 = "simcard.2"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case simcard2Fill = "simcard.2.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case simcardFill = "simcard.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case sleep = "sleep"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case sliderHorizontalBelowSquareFillAndSquare = "slider.horizontal.below.square.fill.and.square"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case sliderVertical3 = "slider.vertical.3"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case sparkle = "sparkle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case sparklesRectangleStack = "sparkles.rectangle.stack"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case sparklesRectangleStackFill = "sparkles.rectangle.stack.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case sparklesSquareFillOnSquare = "sparkles.square.fill.on.square"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case speakerSlashCircle = "speaker.slash.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case speakerSlashCircleFill = "speaker.slash.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case speakerWave1 = "speaker.wave.1"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case speakerWave1Fill = "speaker.wave.1.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case speakerWave2 = "speaker.wave.2"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case speakerWave2Circle = "speaker.wave.2.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case speakerWave2CircleFill = "speaker.wave.2.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case speakerWave2Fill = "speaker.wave.2.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case speakerWave3 = "speaker.wave.3"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case speakerWave3Fill = "speaker.wave.3.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case square2Stack3d = "square.2.stack.3d"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case square2Stack3dBottomFill = "square.2.stack.3d.bottom.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case square2Stack3dTopFill = "square.2.stack.3d.top.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case square3Stack3d = "square.3.stack.3d"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case square3Stack3dBottomFill = "square.3.stack.3d.bottom.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case square3Stack3dMiddleFill = "square.3.stack.3d.middle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case square3Stack3dTopFill = "square.3.stack.3d.top.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case squareAndAtRectangle = "square.and.at.rectangle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case squareBottomhalfFill = "square.bottomhalf.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case squareCircle = "square.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case squareCircleFill = "square.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case squareDashed = "square.dashed"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case squareDashedInsetFill = "square.dashed.inset.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case squareFillOnSquare = "square.fill.on.square"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case squareFillTextGrid1x2 = "square.fill.text.grid.1x2"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case squareGrid3x1BelowLineGrid1x2 = "square.grid.3x1.below.line.grid.1x2"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case squareGrid3x1FillBelowLineGrid1x2 = "square.grid.3x1.fill.below.line.grid.1x2"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case squareGrid3x1FolderBadgePlus = "square.grid.3x1.folder.badge.plus"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case squareGrid3x1FolderFillBadgePlus = "square.grid.3x1.folder.fill.badge.plus"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case squareGrid3x3 = "square.grid.3x3"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case squareGrid3x3BottomleftFill = "square.grid.3x3.bottomleft.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case squareGrid3x3BottommiddleFill = "square.grid.3x3.bottommiddle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case squareGrid3x3BottomrightFill = "square.grid.3x3.bottomright.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case squareGrid3x3Fill = "square.grid.3x3.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case squareGrid3x3FillSquare = "square.grid.3x3.fill.square"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case squareGrid3x3MiddleFill = "square.grid.3x3.middle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case squareGrid3x3MiddleleftFill = "square.grid.3x3.middleleft.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case squareGrid3x3MiddlerightFill = "square.grid.3x3.middleright.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case squareGrid3x3TopleftFill = "square.grid.3x3.topleft.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case squareGrid3x3TopmiddleFill = "square.grid.3x3.topmiddle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case squareGrid3x3ToprightFill = "square.grid.3x3.topright.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case squareOnSquareDashed = "square.on.square.dashed"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case squareOnSquareSquareshapeControlhandles = "square.on.square.squareshape.controlhandles"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case squareSlash = "square.slash"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case squareSlashFill = "square.slash.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case squareSplitBottomrightquarter = "square.split.bottomrightquarter"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case squareSplitBottomrightquarterFill = "square.split.bottomrightquarter.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case squareSplitDiagonal = "square.split.diagonal"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case squareSplitDiagonal2x2 = "square.split.diagonal.2x2"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case squareSplitDiagonal2x2Fill = "square.split.diagonal.2x2.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case squareSplitDiagonalFill = "square.split.diagonal.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case squareStack3dDownForward = "square.stack.3d.down.forward"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case squareStack3dDownForwardFill = "square.stack.3d.down.forward.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case squareStack3dForwardDottedline = "square.stack.3d.forward.dottedline"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case squareStack3dForwardDottedlineFill = "square.stack.3d.forward.dottedline.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case squareStack3dUpBadgeA = "square.stack.3d.up.badge.a"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case squareStack3dUpBadgeAFill = "square.stack.3d.up.badge.a.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case squareTophalfFill = "square.tophalf.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case squareshape = "squareshape"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case squareshapeControlhandlesOnSquareshapeControlhandles = "squareshape.controlhandles.on.squareshape.controlhandles"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case squareshapeDashedSquareshape = "squareshape.dashed.squareshape"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case squareshapeFill = "squareshape.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case squareshapeSplit2x2 = "squareshape.split.2x2"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case squareshapeSplit2x2Dotted = "squareshape.split.2x2.dotted"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case squareshapeSplit3x3 = "squareshape.split.3x3"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case squareshapeSquareshapeDashed = "squareshape.squareshape.dashed"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case starLeadinghalfFill = "star.leadinghalf.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case starSquare = "star.square"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case starSquareFill = "star.square.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case staroflifeCircle = "staroflife.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case staroflifeCircleFill = "staroflife.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case stethoscope = "stethoscope"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case swift = "swift"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case switch2 = "switch.2"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case tablecells = "tablecells"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case tablecellsBadgeEllipsis = "tablecells.badge.ellipsis"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case tablecellsBadgeEllipsisFill = "tablecells.badge.ellipsis.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case tablecellsFill = "tablecells.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case tagSlash = "tag.slash"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case tagSlashFill = "tag.slash.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case target = "target"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case teletypeCircle = "teletype.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case teletypeCircleFill = "teletype.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case terminal = "terminal"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case terminalFill = "terminal.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case textAndCommandMacwindow = "text.and.command.macwindow"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case textBelowPhoto = "text.below.photo"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case textBelowPhotoFill = "text.below.photo.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case textBookClosed = "text.book.closed"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case textBookClosedFill = "text.book.closed.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case textMagnifyingglass = "text.magnifyingglass"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case textRedaction = "text.redaction"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case thermometerSunFill = "thermometer.sun.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case ticket = "ticket"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case ticketFill = "ticket.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case timelineSelection = "timeline.selection"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case timerSquare = "timer.square"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case togglepower = "togglepower"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case touchid = "touchid"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case tram = "tram"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case tramCircle = "tram.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case tramCircleFill = "tram.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case tramTunnelFill = "tram.tunnel.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case trayCircle = "tray.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case trayCircleFill = "tray.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case triangleCircle = "triangle.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case triangleCircleFill = "triangle.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case tvAndHifispeakerFill = "tv.and.hifispeaker.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case videoBadgeCheckmark = "video.badge.checkmark"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case videoBubbleLeft = "video.bubble.left"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case videoBubbleLeftFill = "video.bubble.left.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case videoFillBadgeCheckmark = "video.fill.badge.checkmark"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case videoFillBadgePlus = "video.fill.badge.plus"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case wake = "wake"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case walletPass = "wallet.pass"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case walletPassFill = "wallet.pass.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case wave3Backward = "wave.3.backward"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case wave3BackwardCircle = "wave.3.backward.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case wave3BackwardCircleFill = "wave.3.backward.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case wave3Forward = "wave.3.forward"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case wave3ForwardCircle = "wave.3.forward.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case wave3ForwardCircleFill = "wave.3.forward.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case wave3Left = "wave.3.left"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case wave3LeftCircle = "wave.3.left.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case wave3LeftCircleFill = "wave.3.left.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case wave3Right = "wave.3.right"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case wave3RightCircle = "wave.3.right.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case wave3RightCircleFill = "wave.3.right.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case waveformPathEcgRectangle = "waveform.path.ecg.rectangle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case waveformPathEcgRectangleFill = "waveform.path.ecg.rectangle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case wrenchAndScrewdriver = "wrench.and.screwdriver"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case wrenchAndScrewdriverFill = "wrench.and.screwdriver.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case xmarkBin = "xmark.bin"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case xmarkBinCircle = "xmark.bin.circle"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case xmarkBinCircleFill = "xmark.bin.circle.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case xmarkBinFill = "xmark.bin.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case xmarkDiamond = "xmark.diamond"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case xmarkDiamondFill = "xmark.diamond.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case xmarkRectanglePortrait = "xmark.rectangle.portrait"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case xmarkRectanglePortraitFill = "xmark.rectangle.portrait.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case xserve = "xserve"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case zlRectangleRoundedtop = "zl.rectangle.roundedtop"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case zlRectangleRoundedtopFill = "zl.rectangle.roundedtop.fill"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case zrRectangleRoundedtop = "zr.rectangle.roundedtop"
+    @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7, tvOS 14, *)
+    case zrRectangleRoundedtopFill = "zr.rectangle.roundedtop.fill"
 }
 
-@available(iOS 13.0, watchOS 6, tvOS 13, *)
+@available(iOS 13.0, macOS 11.0, macCatalyst 13.0, watchOS 6, tvOS 13, *)
 public extension Image {
     init(symbol: SFSymbol) {
         self.init(systemName: symbol.rawValue)
     }
 }
 
-@available(iOS 13.0, watchOS 6, tvOS 13, *)
+#if canImport(UIKit)
+@available(iOS 13.0, macCatalyst 13.0, watchOS 6, tvOS 13, *)
 public extension UIImage {
     convenience init(symbol: SFSymbol) {
         self.init(systemName: symbol.rawValue)!
     }
 }
+#elseif canImport(AppKit)
+@available(macOS 11.0, *)
+public extension NSImage {
+    convenience init(symbol: SFSymbol) {
+        self.init(systemSymbolName: symbol.rawValue, accessibilityDescription: nil)!
+    }
+}
+#endif
