@@ -1,8 +1,8 @@
 # SFSymbols
 
-This is a little Swift Package, which abstracts the names of the San Francisco Font Symbols, which can be used in `SwiftUI`, `UIKit` and `AppKit` starting from iOS 13.0, macOS 11.0, watchOS 6 and tvOS 13, into an enum.
+This is a little Swift Package, which abstracts the names of the San Francisco Font Symbols, which can be used in `SwiftUI`, `UIKit` and `AppKit` starting from iOS 13.0, macOS 11.0, watchOS 6.0, and tvOS 13.0, into an enum.
 
-It also has enum cases for all symbols that got added in version 2 of SF Symbols. These cases are available starting from iOS 14.0, macOS 11.0, watchOS 7 and tvOS 14.
+It also has enum cases for all symbols that got added in version 2 of SF Symbols, as well as for the version 3 symbols. These cases are available starting from iOS 14.0, macOS 11.0, watchOS 7.0, and tvOS 14.0, or from iOS 15.0, macOS 12.0, watchOS 8.0, and tvOS 15.0 respectively.
 
 ## Installation
 ### Xcode-Project
@@ -10,7 +10,7 @@ It also has enum cases for all symbols that got added in version 2 of SF Symbols
 To install `SFSymbols`, open your Xcode-Project and navigate to `File->Swift Packages->Add Package Dependency...`.
 Enter the URL `https://github.com/Zollerboy1/SFSymbols.git`.
 
-You have now to enter the version, that you want. If it's not already selected, choose `Version->Up to next major->2.0.0`.
+You have now to enter the version, that you want. If it's not already selected, choose `Version->Up to next major->3.0.0`.
 Now click on `Next` and finally on `Finish`.
 
 ### Swift Package
@@ -18,7 +18,7 @@ Now click on `Next` and finally on `Finish`.
 If you want to use `SFSymbols` in a normal Swift Package, open your `Package.swift` file and add the following line to the `dependencies` array of your Package:
 
 ```swift
-.package(url: "https://github.com/Zollerboy1/SFSymbols", from: "2.0.0")
+.package(url: "https://github.com/Zollerboy1/SFSymbols", from: "3.0.0")
 ```
 
 You can then add `"SFSymbols"` to the `dependencies` of your target.
@@ -31,7 +31,7 @@ Import the module like so:
 import SFSymbols
 ```
 
-You can now initialize your SwiftUI Image structs using the enum values:
+You can now initialize your SwiftUI Image structs using the enum cases like so:
 
 ```swift
 Image(symbol: .clock)

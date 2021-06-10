@@ -1,10 +1,16 @@
-// swift-tools-version:5.1
+// swift-tools-version:5.3
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
 let package = Package(
     name: "SFSymbols",
+    platforms: [
+        .iOS(.v13),
+        .macOS(.v11),
+        .watchOS(.v6),
+        .tvOS(.v13)
+    ],
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
@@ -21,8 +27,5 @@ let package = Package(
         .target(
             name: "SFSymbols",
             dependencies: []),
-        .testTarget(
-            name: "SFSymbolsTests",
-            dependencies: ["SFSymbols"]),
     ]
 )
