@@ -1,11 +1,3 @@
-import SwiftUI
-
-#if canImport(UIKit)
-import UIKit
-#elseif canImport(AppKit)
-import AppKit
-#endif
-
 /// This enum contains cases for all system images availably as SF Symbols.
 ///
 /// Most of the symbols are available starting from `iOS 13.0`, `macOS 11.0`, `watchOS 6.0`, and `tvOS 13.0`.
@@ -19,17 +11,17 @@ import AppKit
 /// The dots in the symbol names are removed and the following letter is uppercased. If the first character of the
 /// symbol name is a digit, the case name is prefixed by an underscore, as Swift identifiers cannot begin with a number.
 ///
-/// E.g. `antenna.radiowaves.left.and.right` becomes `antennaRadiowavesLeftAndRight` and `02.square.fill`
-/// becomes `_02SquareFill`.
+/// E.g. `antenna.radiowaves.left.and.right` becomes ``antennaRadiowavesLeftAndRight`` and `02.square.fill`
+/// becomes ``_02SquareFill``.
 ///
-/// Using this enum, you can now initialize your SwiftUI Image structs using the cases like so:
+/// Using this enum, you can now initialize your ``SwiftUI`` ``Image`` structs using the cases like so:
 ///
 /// ```swift
 /// Image(symbol: .clock)
 /// ```
 ///
-/// `SFSymbols` also includes convenience initializers for `UIImage`, if you're working on an `UIKit` app, or `NSImage`,
-/// in case you are building an app using `AppKit`:
+/// ``SFSymbols`` also includes convenience initializers for ``UIImage``, if you're working on an ``UIKit`` app, or ``NSImage``,
+/// in case you are building an app using ``AppKit``:
 ///
 /// ```swift
 /// UIImage(symbol: .clock)
@@ -553,6 +545,11 @@ public enum SFSymbol: String {
     /// The SF Symbol named `50.square.fill`
     case _50SquareFill = "50.square.fill"
     /// The SF Symbol named `a`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case a = "a"
     /// The SF Symbol named `a.circle`
     case aCircle = "a.circle"
@@ -576,6 +573,10 @@ public enum SFSymbol: String {
     case alt = "alt"
     /// The SF Symbol named `ant`
     case ant = "ant"
+    /// The SF Symbol named `ant.circle`
+    case antCircle = "ant.circle"
+    /// The SF Symbol named `ant.circle.fill`
+    case antCircleFill = "ant.circle.fill"
     /// The SF Symbol named `ant.fill`
     case antFill = "ant.fill"
     /// The SF Symbol named `antenna.radiowaves.left.and.right`
@@ -599,10 +600,25 @@ public enum SFSymbol: String {
     /// The SF Symbol named `arkit`
     case arkit = "arkit"
     /// The SF Symbol named `arrow.2.circlepath`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case arrow2Circlepath = "arrow.2.circlepath"
     /// The SF Symbol named `arrow.2.circlepath.circle`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case arrow2CirclepathCircle = "arrow.2.circlepath.circle"
     /// The SF Symbol named `arrow.2.circlepath.circle.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case arrow2CirclepathCircleFill = "arrow.2.circlepath.circle.fill"
     /// The SF Symbol named `arrow.2.squarepath`
     case arrow2Squarepath = "arrow.2.squarepath"
@@ -671,6 +687,11 @@ public enum SFSymbol: String {
     /// The SF Symbol named `arrow.down.to.line`
     case arrowDownToLine = "arrow.down.to.line"
     /// The SF Symbol named `arrow.down.to.line.alt`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case arrowDownToLineAlt = "arrow.down.to.line.alt"
     /// The SF Symbol named `arrow.left`
     case arrowLeft = "arrow.left"
@@ -695,20 +716,55 @@ public enum SFSymbol: String {
     /// The SF Symbol named `arrow.left.to.line`
     case arrowLeftToLine = "arrow.left.to.line"
     /// The SF Symbol named `arrow.left.to.line.alt`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case arrowLeftToLineAlt = "arrow.left.to.line.alt"
     /// The SF Symbol named `arrow.merge`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case arrowMerge = "arrow.merge"
     /// The SF Symbol named `arrow.right`
     case arrowRight = "arrow.right"
     /// The SF Symbol named `arrow.right.arrow.left`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case arrowRightArrowLeft = "arrow.right.arrow.left"
     /// The SF Symbol named `arrow.right.arrow.left.circle`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case arrowRightArrowLeftCircle = "arrow.right.arrow.left.circle"
     /// The SF Symbol named `arrow.right.arrow.left.circle.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case arrowRightArrowLeftCircleFill = "arrow.right.arrow.left.circle.fill"
     /// The SF Symbol named `arrow.right.arrow.left.square`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case arrowRightArrowLeftSquare = "arrow.right.arrow.left.square"
     /// The SF Symbol named `arrow.right.arrow.left.square.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case arrowRightArrowLeftSquareFill = "arrow.right.arrow.left.square.fill"
     /// The SF Symbol named `arrow.right.circle`
     case arrowRightCircle = "arrow.right.circle"
@@ -721,8 +777,18 @@ public enum SFSymbol: String {
     /// The SF Symbol named `arrow.right.to.line`
     case arrowRightToLine = "arrow.right.to.line"
     /// The SF Symbol named `arrow.right.to.line.alt`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case arrowRightToLineAlt = "arrow.right.to.line.alt"
     /// The SF Symbol named `arrow.swap`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case arrowSwap = "arrow.swap"
     /// The SF Symbol named `arrow.turn.down.left`
     case arrowTurnDownLeft = "arrow.turn.down.left"
@@ -788,11 +854,23 @@ public enum SFSymbol: String {
     case arrowUpLeftSquareFill = "arrow.up.left.square.fill"
     /// The SF Symbol named `arrow.up.right`
     case arrowUpRight = "arrow.up.right"
+    /// The SF Symbol named `arrow.up.right.circle`
+    case arrowUpRightCircle = "arrow.up.right.circle"
     /// The SF Symbol named `arrow.up.right.circle.fill`
     case arrowUpRightCircleFill = "arrow.up.right.circle.fill"
     /// The SF Symbol named `arrow.up.right.diamond`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case arrowUpRightDiamond = "arrow.up.right.diamond"
     /// The SF Symbol named `arrow.up.right.diamond.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case arrowUpRightDiamondFill = "arrow.up.right.diamond.fill"
     /// The SF Symbol named `arrow.up.right.square`
     case arrowUpRightSquare = "arrow.up.right.square"
@@ -809,8 +887,18 @@ public enum SFSymbol: String {
     /// The SF Symbol named `arrow.up.to.line`
     case arrowUpToLine = "arrow.up.to.line"
     /// The SF Symbol named `arrow.up.to.line.alt`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case arrowUpToLineAlt = "arrow.up.to.line.alt"
     /// The SF Symbol named `arrow.upright.circle`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case arrowUprightCircle = "arrow.upright.circle"
     /// The SF Symbol named `arrow.uturn.down`
     case arrowUturnDown = "arrow.uturn.down"
@@ -826,6 +914,8 @@ public enum SFSymbol: String {
     case arrowUturnLeft = "arrow.uturn.left"
     /// The SF Symbol named `arrow.uturn.left.circle`
     case arrowUturnLeftCircle = "arrow.uturn.left.circle"
+    /// The SF Symbol named `arrow.uturn.left.circle.badge.ellipsis`
+    case arrowUturnLeftCircleBadgeEllipsis = "arrow.uturn.left.circle.badge.ellipsis"
     /// The SF Symbol named `arrow.uturn.left.circle.fill`
     case arrowUturnLeftCircleFill = "arrow.uturn.left.circle.fill"
     /// The SF Symbol named `arrow.uturn.left.square`
@@ -920,6 +1010,10 @@ public enum SFSymbol: String {
     case arrowtriangleUpSquare = "arrowtriangle.up.square"
     /// The SF Symbol named `arrowtriangle.up.square.fill`
     case arrowtriangleUpSquareFill = "arrowtriangle.up.square.fill"
+    /// The SF Symbol named `aspectratio`
+    case aspectratio = "aspectratio"
+    /// The SF Symbol named `aspectratio.fill`
+    case aspectratioFill = "aspectratio.fill"
     /// The SF Symbol named `asterisk.circle`
     case asteriskCircle = "asterisk.circle"
     /// The SF Symbol named `asterisk.circle.fill`
@@ -965,13 +1059,27 @@ public enum SFSymbol: String {
     /// The SF Symbol named `bag.badge.minus`
     case bagBadgeMinus = "bag.badge.minus"
     /// The SF Symbol named `bag.badge.minus.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case bagBadgeMinusFill = "bag.badge.minus.fill"
     /// The SF Symbol named `bag.badge.plus`
     case bagBadgePlus = "bag.badge.plus"
     /// The SF Symbol named `bag.badge.plus.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case bagBadgePlusFill = "bag.badge.plus.fill"
     /// The SF Symbol named `bag.fill`
     case bagFill = "bag.fill"
+    /// The SF Symbol named `bag.fill.badge.minus`
+    case bagFillBadgeMinus = "bag.fill.badge.minus"
+    /// The SF Symbol named `bag.fill.badge.plus`
+    case bagFillBadgePlus = "bag.fill.badge.plus"
     /// The SF Symbol named `bahtsign.circle`
     case bahtsignCircle = "bahtsign.circle"
     /// The SF Symbol named `bahtsign.circle.fill`
@@ -1000,6 +1108,10 @@ public enum SFSymbol: String {
     case bedDoubleFill = "bed.double.fill"
     /// The SF Symbol named `bell`
     case bell = "bell"
+    /// The SF Symbol named `bell.circle`
+    case bellCircle = "bell.circle"
+    /// The SF Symbol named `bell.circle.fill`
+    case bellCircleFill = "bell.circle.fill"
     /// The SF Symbol named `bell.fill`
     case bellFill = "bell.fill"
     /// The SF Symbol named `bell.slash`
@@ -1007,8 +1119,18 @@ public enum SFSymbol: String {
     /// The SF Symbol named `bell.slash.fill`
     case bellSlashFill = "bell.slash.fill"
     /// The SF Symbol named `bin.xmark`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case binXmark = "bin.xmark"
     /// The SF Symbol named `bin.xmark.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case binXmarkFill = "bin.xmark.fill"
     /// The SF Symbol named `bitcoinsign.circle`
     case bitcoinsignCircle = "bitcoinsign.circle"
@@ -1026,6 +1148,14 @@ public enum SFSymbol: String {
     case boldUnderline = "bold.underline"
     /// The SF Symbol named `bolt`
     case bolt = "bolt"
+    /// The SF Symbol named `bolt.badge.a`
+    case boltBadgeA = "bolt.badge.a"
+    /// The SF Symbol named `bolt.badge.a.fill`
+    case boltBadgeAFill = "bolt.badge.a.fill"
+    /// The SF Symbol named `bolt.circle`
+    case boltCircle = "bolt.circle"
+    /// The SF Symbol named `bolt.circle.fill`
+    case boltCircleFill = "bolt.circle.fill"
     /// The SF Symbol named `bolt.fill`
     case boltFill = "bolt.fill"
     /// The SF Symbol named `bolt.horizontal`
@@ -1046,6 +1176,10 @@ public enum SFSymbol: String {
     case boltSlashFill = "bolt.slash.fill"
     /// The SF Symbol named `book`
     case book = "book"
+    /// The SF Symbol named `book.circle`
+    case bookCircle = "book.circle"
+    /// The SF Symbol named `book.circle.fill`
+    case bookCircleFill = "book.circle.fill"
     /// The SF Symbol named `book.fill`
     case bookFill = "book.fill"
     /// The SF Symbol named `bookmark`
@@ -1096,8 +1230,16 @@ public enum SFSymbol: String {
     case calendarBadgeMinus = "calendar.badge.minus"
     /// The SF Symbol named `calendar.badge.plus`
     case calendarBadgePlus = "calendar.badge.plus"
+    /// The SF Symbol named `calendar.circle`
+    case calendarCircle = "calendar.circle"
+    /// The SF Symbol named `calendar.circle.fill`
+    case calendarCircleFill = "calendar.circle.fill"
     /// The SF Symbol named `camera`
     case camera = "camera"
+    /// The SF Symbol named `camera.circle`
+    case cameraCircle = "camera.circle"
+    /// The SF Symbol named `camera.circle.fill`
+    case cameraCircleFill = "camera.circle.fill"
     /// The SF Symbol named `camera.fill`
     case cameraFill = "camera.fill"
     /// The SF Symbol named `camera.on.rectangle`
@@ -1105,8 +1247,18 @@ public enum SFSymbol: String {
     /// The SF Symbol named `camera.on.rectangle.fill`
     case cameraOnRectangleFill = "camera.on.rectangle.fill"
     /// The SF Symbol named `camera.rotate`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case cameraRotate = "camera.rotate"
     /// The SF Symbol named `camera.rotate.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case cameraRotateFill = "camera.rotate.fill"
     /// The SF Symbol named `camera.viewfinder`
     case cameraViewfinder = "camera.viewfinder"
@@ -1114,10 +1266,16 @@ public enum SFSymbol: String {
     case capslock = "capslock"
     /// The SF Symbol named `capslock.fill`
     case capslockFill = "capslock.fill"
+    /// The SF Symbol named `capsule`
+    case capsule = "capsule"
+    /// The SF Symbol named `capsule.fill`
+    case capsuleFill = "capsule.fill"
     /// The SF Symbol named `captions.bubble`
     case captionsBubble = "captions.bubble"
     /// The SF Symbol named `captions.bubble.fill`
     case captionsBubbleFill = "captions.bubble.fill"
+    /// The SF Symbol named `car`
+    case car = "car"
     /// The SF Symbol named `car.fill`
     case carFill = "car.fill"
     /// The SF Symbol named `cart`
@@ -1125,13 +1283,27 @@ public enum SFSymbol: String {
     /// The SF Symbol named `cart.badge.minus`
     case cartBadgeMinus = "cart.badge.minus"
     /// The SF Symbol named `cart.badge.minus.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case cartBadgeMinusFill = "cart.badge.minus.fill"
     /// The SF Symbol named `cart.badge.plus`
     case cartBadgePlus = "cart.badge.plus"
     /// The SF Symbol named `cart.badge.plus.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case cartBadgePlusFill = "cart.badge.plus.fill"
     /// The SF Symbol named `cart.fill`
     case cartFill = "cart.fill"
+    /// The SF Symbol named `cart.fill.badge.minus`
+    case cartFillBadgeMinus = "cart.fill.badge.minus"
+    /// The SF Symbol named `cart.fill.badge.plus`
+    case cartFillBadgePlus = "cart.fill.badge.plus"
     /// The SF Symbol named `cedisign.circle`
     case cedisignCircle = "cedisign.circle"
     /// The SF Symbol named `cedisign.circle.fill`
@@ -1170,6 +1342,10 @@ public enum SFSymbol: String {
     case checkmarkSeal = "checkmark.seal"
     /// The SF Symbol named `checkmark.seal.fill`
     case checkmarkSealFill = "checkmark.seal.fill"
+    /// The SF Symbol named `checkmark.shield`
+    case checkmarkShield = "checkmark.shield"
+    /// The SF Symbol named `checkmark.shield.fill`
+    case checkmarkShieldFill = "checkmark.shield.fill"
     /// The SF Symbol named `checkmark.square`
     case checkmarkSquare = "checkmark.square"
     /// The SF Symbol named `checkmark.square.fill`
@@ -1201,6 +1377,11 @@ public enum SFSymbol: String {
     /// The SF Symbol named `chevron.left.circle.fill`
     case chevronLeftCircleFill = "chevron.left.circle.fill"
     /// The SF Symbol named `chevron.left.slash.chevron.right`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case chevronLeftSlashChevronRight = "chevron.left.slash.chevron.right"
     /// The SF Symbol named `chevron.left.square`
     case chevronLeftSquare = "chevron.left.square"
@@ -1233,20 +1414,49 @@ public enum SFSymbol: String {
     /// The SF Symbol named `circle`
     case circle = "circle"
     /// The SF Symbol named `circle.bottomthird.split`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case circleBottomthirdSplit = "circle.bottomthird.split"
     /// The SF Symbol named `circle.fill`
     case circleFill = "circle.fill"
+    /// The SF Symbol named `circle.grid.2x2`
+    case circleGrid2x2 = "circle.grid.2x2"
+    /// The SF Symbol named `circle.grid.2x2.fill`
+    case circleGrid2x2Fill = "circle.grid.2x2.fill"
     /// The SF Symbol named `circle.grid.3x3`
     case circleGrid3x3 = "circle.grid.3x3"
     /// The SF Symbol named `circle.grid.3x3.fill`
     case circleGrid3x3Fill = "circle.grid.3x3.fill"
     /// The SF Symbol named `circle.grid.hex`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case circleGridHex = "circle.grid.hex"
     /// The SF Symbol named `circle.grid.hex.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case circleGridHexFill = "circle.grid.hex.fill"
     /// The SF Symbol named `circle.lefthalf.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case circleLefthalfFill = "circle.lefthalf.fill"
     /// The SF Symbol named `circle.righthalf.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case circleRighthalfFill = "circle.righthalf.fill"
     /// The SF Symbol named `clear`
     case clear = "clear"
@@ -1351,12 +1561,27 @@ public enum SFSymbol: String {
     /// The SF Symbol named `cube`
     case cube = "cube"
     /// The SF Symbol named `cube.box`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case cubeBox = "cube.box"
     /// The SF Symbol named `cube.box.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case cubeBoxFill = "cube.box.fill"
     /// The SF Symbol named `cube.fill`
     case cubeFill = "cube.fill"
     /// The SF Symbol named `cursor.rays`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case cursorRays = "cursor.rays"
     /// The SF Symbol named `d.circle`
     case dCircle = "d.circle"
@@ -1366,6 +1591,10 @@ public enum SFSymbol: String {
     case dSquare = "d.square"
     /// The SF Symbol named `d.square.fill`
     case dSquareFill = "d.square.fill"
+    /// The SF Symbol named `decrease.indent`
+    case decreaseIndent = "decrease.indent"
+    /// The SF Symbol named `decrease.quotelevel`
+    case decreaseQuotelevel = "decrease.quotelevel"
     /// The SF Symbol named `delete.left`
     case deleteLeft = "delete.left"
     /// The SF Symbol named `delete.left.fill`
@@ -1377,8 +1606,18 @@ public enum SFSymbol: String {
     /// The SF Symbol named `desktopcomputer`
     case desktopcomputer = "desktopcomputer"
     /// The SF Symbol named `dial`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case dial = "dial"
     /// The SF Symbol named `dial.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case dialFill = "dial.fill"
     /// The SF Symbol named `divide`
     case divide = "divide"
@@ -1394,6 +1633,10 @@ public enum SFSymbol: String {
     case doc = "doc"
     /// The SF Symbol named `doc.append`
     case docAppend = "doc.append"
+    /// The SF Symbol named `doc.circle`
+    case docCircle = "doc.circle"
+    /// The SF Symbol named `doc.circle.fill`
+    case docCircleFill = "doc.circle.fill"
     /// The SF Symbol named `doc.fill`
     case docFill = "doc.fill"
     /// The SF Symbol named `doc.on.clipboard`
@@ -1433,8 +1676,18 @@ public enum SFSymbol: String {
     /// The SF Symbol named `dongsign.square.fill`
     case dongsignSquareFill = "dongsign.square.fill"
     /// The SF Symbol named `dot.circle`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case dotCircle = "dot.circle"
     /// The SF Symbol named `dot.circle.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case dotCircleFill = "dot.circle.fill"
     /// The SF Symbol named `dot.radiowaves.left.and.right`
     case dotRadiowavesLeftAndRight = "dot.radiowaves.left.and.right"
@@ -1463,8 +1716,18 @@ public enum SFSymbol: String {
     /// The SF Symbol named `eject.fill`
     case ejectFill = "eject.fill"
     /// The SF Symbol named `ellipses.bubble`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case ellipsesBubble = "ellipses.bubble"
     /// The SF Symbol named `ellipses.bubble.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case ellipsesBubbleFill = "ellipses.bubble.fill"
     /// The SF Symbol named `ellipsis`
     case ellipsis = "ellipsis"
@@ -1526,6 +1789,10 @@ public enum SFSymbol: String {
     case exclamationmarkOctagon = "exclamationmark.octagon"
     /// The SF Symbol named `exclamationmark.octagon.fill`
     case exclamationmarkOctagonFill = "exclamationmark.octagon.fill"
+    /// The SF Symbol named `exclamationmark.shield`
+    case exclamationmarkShield = "exclamationmark.shield"
+    /// The SF Symbol named `exclamationmark.shield.fill`
+    case exclamationmarkShieldFill = "exclamationmark.shield.fill"
     /// The SF Symbol named `exclamationmark.square`
     case exclamationmarkSquare = "exclamationmark.square"
     /// The SF Symbol named `exclamationmark.square.fill`
@@ -1556,6 +1823,10 @@ public enum SFSymbol: String {
     case fCircleFill = "f.circle.fill"
     /// The SF Symbol named `f.cursive`
     case fCursive = "f.cursive"
+    /// The SF Symbol named `f.cursive.circle`
+    case fCursiveCircle = "f.cursive.circle"
+    /// The SF Symbol named `f.cursive.circle.fill`
+    case fCursiveCircleFill = "f.cursive.circle.fill"
     /// The SF Symbol named `f.square`
     case fSquare = "f.square"
     /// The SF Symbol named `f.square.fill`
@@ -1568,6 +1839,10 @@ public enum SFSymbol: String {
     case filmFill = "film.fill"
     /// The SF Symbol named `flag`
     case flag = "flag"
+    /// The SF Symbol named `flag.circle`
+    case flagCircle = "flag.circle"
+    /// The SF Symbol named `flag.circle.fill`
+    case flagCircleFill = "flag.circle.fill"
     /// The SF Symbol named `flag.fill`
     case flagFill = "flag.fill"
     /// The SF Symbol named `flag.slash`
@@ -1578,6 +1853,10 @@ public enum SFSymbol: String {
     case flame = "flame"
     /// The SF Symbol named `flame.fill`
     case flameFill = "flame.fill"
+    /// The SF Symbol named `flashlight.off.fill`
+    case flashlightOffFill = "flashlight.off.fill"
+    /// The SF Symbol named `flashlight.on.fill`
+    case flashlightOnFill = "flashlight.on.fill"
     /// The SF Symbol named `florinsign.circle`
     case florinsignCircle = "florinsign.circle"
     /// The SF Symbol named `florinsign.circle.fill`
@@ -1595,14 +1874,29 @@ public enum SFSymbol: String {
     /// The SF Symbol named `folder.badge.minus`
     case folderBadgeMinus = "folder.badge.minus"
     /// The SF Symbol named `folder.badge.minus.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case folderBadgeMinusFill = "folder.badge.minus.fill"
     /// The SF Symbol named `folder.badge.person.crop`
     case folderBadgePersonCrop = "folder.badge.person.crop"
     /// The SF Symbol named `folder.badge.person.crop.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case folderBadgePersonCropFill = "folder.badge.person.crop.fill"
     /// The SF Symbol named `folder.badge.plus`
     case folderBadgePlus = "folder.badge.plus"
     /// The SF Symbol named `folder.badge.plus.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case folderBadgePlusFill = "folder.badge.plus.fill"
     /// The SF Symbol named `folder.circle`
     case folderCircle = "folder.circle"
@@ -1610,6 +1904,12 @@ public enum SFSymbol: String {
     case folderCircleFill = "folder.circle.fill"
     /// The SF Symbol named `folder.fill`
     case folderFill = "folder.fill"
+    /// The SF Symbol named `folder.fill.badge.minus`
+    case folderFillBadgeMinus = "folder.fill.badge.minus"
+    /// The SF Symbol named `folder.fill.badge.person.crop`
+    case folderFillBadgePersonCrop = "folder.fill.badge.person.crop"
+    /// The SF Symbol named `folder.fill.badge.plus`
+    case folderFillBadgePlus = "folder.fill.badge.plus"
     /// The SF Symbol named `forward`
     case forward = "forward"
     /// The SF Symbol named `forward.end`
@@ -1665,30 +1965,65 @@ public enum SFSymbol: String {
     /// The SF Symbol named `gobackward.10`
     case gobackward10 = "gobackward.10"
     /// The SF Symbol named `gobackward.10.ar`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case gobackward10Ar = "gobackward.10.ar"
     /// The SF Symbol named `gobackward.15`
     case gobackward15 = "gobackward.15"
     /// The SF Symbol named `gobackward.15.ar`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case gobackward15Ar = "gobackward.15.ar"
     /// The SF Symbol named `gobackward.30`
     case gobackward30 = "gobackward.30"
     /// The SF Symbol named `gobackward.30.ar`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case gobackward30Ar = "gobackward.30.ar"
     /// The SF Symbol named `gobackward.45`
     case gobackward45 = "gobackward.45"
     /// The SF Symbol named `gobackward.45.ar`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case gobackward45Ar = "gobackward.45.ar"
     /// The SF Symbol named `gobackward.60`
     case gobackward60 = "gobackward.60"
     /// The SF Symbol named `gobackward.60.ar`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case gobackward60Ar = "gobackward.60.ar"
     /// The SF Symbol named `gobackward.75`
     case gobackward75 = "gobackward.75"
     /// The SF Symbol named `gobackward.75.ar`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case gobackward75Ar = "gobackward.75.ar"
     /// The SF Symbol named `gobackward.90`
     case gobackward90 = "gobackward.90"
     /// The SF Symbol named `gobackward.90.ar`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case gobackward90Ar = "gobackward.90.ar"
     /// The SF Symbol named `gobackward.minus`
     case gobackwardMinus = "gobackward.minus"
@@ -1697,30 +2032,65 @@ public enum SFSymbol: String {
     /// The SF Symbol named `goforward.10`
     case goforward10 = "goforward.10"
     /// The SF Symbol named `goforward.10.ar`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case goforward10Ar = "goforward.10.ar"
     /// The SF Symbol named `goforward.15`
     case goforward15 = "goforward.15"
     /// The SF Symbol named `goforward.15.ar`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case goforward15Ar = "goforward.15.ar"
     /// The SF Symbol named `goforward.30`
     case goforward30 = "goforward.30"
     /// The SF Symbol named `goforward.30.ar`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case goforward30Ar = "goforward.30.ar"
     /// The SF Symbol named `goforward.45`
     case goforward45 = "goforward.45"
     /// The SF Symbol named `goforward.45.ar`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case goforward45Ar = "goforward.45.ar"
     /// The SF Symbol named `goforward.60`
     case goforward60 = "goforward.60"
     /// The SF Symbol named `goforward.60.ar`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case goforward60Ar = "goforward.60.ar"
     /// The SF Symbol named `goforward.75`
     case goforward75 = "goforward.75"
     /// The SF Symbol named `goforward.75.ar`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case goforward75Ar = "goforward.75.ar"
     /// The SF Symbol named `goforward.90`
     case goforward90 = "goforward.90"
     /// The SF Symbol named `goforward.90.ar`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case goforward90Ar = "goforward.90.ar"
     /// The SF Symbol named `goforward.plus`
     case goforwardPlus = "goforward.plus"
@@ -1814,11 +2184,29 @@ public enum SFSymbol: String {
     case heartSlashFill = "heart.slash.fill"
     /// The SF Symbol named `helm`
     case helm = "helm"
+    /// The SF Symbol named `hexagon`
+    case hexagon = "hexagon"
+    /// The SF Symbol named `hexagon.fill`
+    case hexagonFill = "hexagon.fill"
+    /// The SF Symbol named `hifispeaker`
+    case hifispeaker = "hifispeaker"
+    /// The SF Symbol named `hifispeaker.fill`
+    case hifispeakerFill = "hifispeaker.fill"
     /// The SF Symbol named `hourglass`
     case hourglass = "hourglass"
     /// The SF Symbol named `hourglass.bottomhalf.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case hourglassBottomhalfFill = "hourglass.bottomhalf.fill"
     /// The SF Symbol named `hourglass.tophalf.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case hourglassTophalfFill = "hourglass.tophalf.fill"
     /// The SF Symbol named `house`
     case house = "house"
@@ -1862,6 +2250,10 @@ public enum SFSymbol: String {
     case icloudSlash = "icloud.slash"
     /// The SF Symbol named `icloud.slash.fill`
     case icloudSlashFill = "icloud.slash.fill"
+    /// The SF Symbol named `increase.indent`
+    case increaseIndent = "increase.indent"
+    /// The SF Symbol named `increase.quotelevel`
+    case increaseQuotelevel = "increase.quotelevel"
     /// The SF Symbol named `indianrupeesign.circle`
     case indianrupeesignCircle = "indianrupeesign.circle"
     /// The SF Symbol named `indianrupeesign.circle.fill`
@@ -1925,6 +2317,11 @@ public enum SFSymbol: String {
     /// The SF Symbol named `lasso`
     case lasso = "lasso"
     /// The SF Symbol named `leaf.arrow.circlepath`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case leafArrowCirclepath = "leaf.arrow.circlepath"
     /// The SF Symbol named `lessthan`
     case lessthan = "lessthan"
@@ -1940,13 +2337,41 @@ public enum SFSymbol: String {
     case lightMax = "light.max"
     /// The SF Symbol named `light.min`
     case lightMin = "light.min"
+    /// The SF Symbol named `lightbulb`
+    case lightbulb = "lightbulb"
+    /// The SF Symbol named `lightbulb.fill`
+    case lightbulbFill = "lightbulb.fill"
+    /// The SF Symbol named `lightbulb.slash`
+    case lightbulbSlash = "lightbulb.slash"
+    /// The SF Symbol named `lightbulb.slash.fill`
+    case lightbulbSlashFill = "lightbulb.slash.fill"
     /// The SF Symbol named `line.horizontal.3`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case lineHorizontal3 = "line.horizontal.3"
     /// The SF Symbol named `line.horizontal.3.decrease`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case lineHorizontal3Decrease = "line.horizontal.3.decrease"
     /// The SF Symbol named `line.horizontal.3.decrease.circle`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case lineHorizontal3DecreaseCircle = "line.horizontal.3.decrease.circle"
     /// The SF Symbol named `line.horizontal.3.decrease.circle.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case lineHorizontal3DecreaseCircleFill = "line.horizontal.3.decrease.circle.fill"
     /// The SF Symbol named `link`
     case link = "link"
@@ -1977,6 +2402,11 @@ public enum SFSymbol: String {
     /// The SF Symbol named `list.number`
     case listNumber = "list.number"
     /// The SF Symbol named `list.number.rtl`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case listNumberRtl = "list.number.rtl"
     /// The SF Symbol named `livephoto`
     case livephoto = "livephoto"
@@ -2024,6 +2454,10 @@ public enum SFSymbol: String {
     case lockRotation = "lock.rotation"
     /// The SF Symbol named `lock.rotation.open`
     case lockRotationOpen = "lock.rotation.open"
+    /// The SF Symbol named `lock.shield`
+    case lockShield = "lock.shield"
+    /// The SF Symbol named `lock.shield.fill`
+    case lockShieldFill = "lock.shield.fill"
     /// The SF Symbol named `lock.slash`
     case lockSlash = "lock.slash"
     /// The SF Symbol named `lock.slash.fill`
@@ -2060,6 +2494,10 @@ public enum SFSymbol: String {
     case mappin = "mappin"
     /// The SF Symbol named `mappin.and.ellipse`
     case mappinAndEllipse = "mappin.and.ellipse"
+    /// The SF Symbol named `mappin.circle`
+    case mappinCircle = "mappin.circle"
+    /// The SF Symbol named `mappin.circle.fill`
+    case mappinCircleFill = "mappin.circle.fill"
     /// The SF Symbol named `mappin.slash`
     case mappinSlash = "mappin.slash"
     /// The SF Symbol named `memories`
@@ -2068,6 +2506,14 @@ public enum SFSymbol: String {
     case memoriesBadgeMinus = "memories.badge.minus"
     /// The SF Symbol named `memories.badge.plus`
     case memoriesBadgePlus = "memories.badge.plus"
+    /// The SF Symbol named `message`
+    case message = "message"
+    /// The SF Symbol named `message.circle`
+    case messageCircle = "message.circle"
+    /// The SF Symbol named `message.circle.fill`
+    case messageCircleFill = "message.circle.fill"
+    /// The SF Symbol named `message.fill`
+    case messageFill = "message.fill"
     /// The SF Symbol named `metronome`
     case metronome = "metronome"
     /// The SF Symbol named `mic`
@@ -2103,6 +2549,11 @@ public enum SFSymbol: String {
     /// The SF Symbol named `minus.rectangle.fill`
     case minusRectangleFill = "minus.rectangle.fill"
     /// The SF Symbol named `minus.slash.plus`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case minusSlashPlus = "minus.slash.plus"
     /// The SF Symbol named `minus.square`
     case minusSquare = "minus.square"
@@ -2135,8 +2586,18 @@ public enum SFSymbol: String {
     /// The SF Symbol named `multiply.square.fill`
     case multiplySquareFill = "multiply.square.fill"
     /// The SF Symbol named `music.house`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case musicHouse = "music.house"
     /// The SF Symbol named `music.house.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case musicHouseFill = "music.house.fill"
     /// The SF Symbol named `music.mic`
     case musicMic = "music.mic"
@@ -2200,11 +2661,20 @@ public enum SFSymbol: String {
     case panoFill = "pano.fill"
     /// The SF Symbol named `paperclip`
     case paperclip = "paperclip"
+    /// The SF Symbol named `paperclip.circle`
+    case paperclipCircle = "paperclip.circle"
+    /// The SF Symbol named `paperclip.circle.fill`
+    case paperclipCircleFill = "paperclip.circle.fill"
     /// The SF Symbol named `paperplane`
     case paperplane = "paperplane"
     /// The SF Symbol named `paperplane.fill`
     case paperplaneFill = "paperplane.fill"
     /// The SF Symbol named `paragraph`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case paragraph = "paragraph"
     /// The SF Symbol named `pause`
     case pause = "pause"
@@ -2221,6 +2691,11 @@ public enum SFSymbol: String {
     /// The SF Symbol named `pencil`
     case pencil = "pencil"
     /// The SF Symbol named `pencil.and.ellipsis.rectangle`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case pencilAndEllipsisRectangle = "pencil.and.ellipsis.rectangle"
     /// The SF Symbol named `pencil.and.outline`
     case pencilAndOutline = "pencil.and.outline"
@@ -2242,21 +2717,59 @@ public enum SFSymbol: String {
     case percent = "percent"
     /// The SF Symbol named `person`
     case person = "person"
+    /// The SF Symbol named `person.2`
+    case person2 = "person.2"
+    /// The SF Symbol named `person.2.fill`
+    case person2Fill = "person.2.fill"
     /// The SF Symbol named `person.2.square.stack`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case person2SquareStack = "person.2.square.stack"
     /// The SF Symbol named `person.2.square.stack.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case person2SquareStackFill = "person.2.square.stack.fill"
+    /// The SF Symbol named `person.3`
+    case person3 = "person.3"
+    /// The SF Symbol named `person.3.fill`
+    case person3Fill = "person.3.fill"
     /// The SF Symbol named `person.and.person`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case personAndPerson = "person.and.person"
     /// The SF Symbol named `person.and.person.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case personAndPersonFill = "person.and.person.fill"
     /// The SF Symbol named `person.badge.minus`
     case personBadgeMinus = "person.badge.minus"
     /// The SF Symbol named `person.badge.minus.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case personBadgeMinusFill = "person.badge.minus.fill"
     /// The SF Symbol named `person.badge.plus`
     case personBadgePlus = "person.badge.plus"
     /// The SF Symbol named `person.badge.plus.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case personBadgePlusFill = "person.badge.plus.fill"
     /// The SF Symbol named `person.circle`
     case personCircle = "person.circle"
@@ -2267,25 +2780,63 @@ public enum SFSymbol: String {
     /// The SF Symbol named `person.crop.circle.badge.checkmark`
     case personCropCircleBadgeCheckmark = "person.crop.circle.badge.checkmark"
     /// The SF Symbol named `person.crop.circle.badge.checkmark.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case personCropCircleBadgeCheckmarkFill = "person.crop.circle.badge.checkmark.fill"
     /// The SF Symbol named `person.crop.circle.badge.exclam`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case personCropCircleBadgeExclam = "person.crop.circle.badge.exclam"
     /// The SF Symbol named `person.crop.circle.badge.exclam.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case personCropCircleBadgeExclamFill = "person.crop.circle.badge.exclam.fill"
     /// The SF Symbol named `person.crop.circle.badge.minus`
     case personCropCircleBadgeMinus = "person.crop.circle.badge.minus"
     /// The SF Symbol named `person.crop.circle.badge.minus.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case personCropCircleBadgeMinusFill = "person.crop.circle.badge.minus.fill"
     /// The SF Symbol named `person.crop.circle.badge.plus`
     case personCropCircleBadgePlus = "person.crop.circle.badge.plus"
     /// The SF Symbol named `person.crop.circle.badge.plus.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case personCropCircleBadgePlusFill = "person.crop.circle.badge.plus.fill"
     /// The SF Symbol named `person.crop.circle.badge.xmark`
     case personCropCircleBadgeXmark = "person.crop.circle.badge.xmark"
     /// The SF Symbol named `person.crop.circle.badge.xmark.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case personCropCircleBadgeXmarkFill = "person.crop.circle.badge.xmark.fill"
     /// The SF Symbol named `person.crop.circle.fill`
     case personCropCircleFill = "person.crop.circle.fill"
+    /// The SF Symbol named `person.crop.circle.fill.badge.checkmark`
+    case personCropCircleFillBadgeCheckmark = "person.crop.circle.fill.badge.checkmark"
+    /// The SF Symbol named `person.crop.circle.fill.badge.minus`
+    case personCropCircleFillBadgeMinus = "person.crop.circle.fill.badge.minus"
+    /// The SF Symbol named `person.crop.circle.fill.badge.plus`
+    case personCropCircleFillBadgePlus = "person.crop.circle.fill.badge.plus"
+    /// The SF Symbol named `person.crop.circle.fill.badge.xmark`
+    case personCropCircleFillBadgeXmark = "person.crop.circle.fill.badge.xmark"
     /// The SF Symbol named `person.crop.rectangle`
     case personCropRectangle = "person.crop.rectangle"
     /// The SF Symbol named `person.crop.rectangle.fill`
@@ -2325,18 +2876,38 @@ public enum SFSymbol: String {
     /// The SF Symbol named `phone.arrow.down.left`
     case phoneArrowDownLeft = "phone.arrow.down.left"
     /// The SF Symbol named `phone.arrow.down.left.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case phoneArrowDownLeftFill = "phone.arrow.down.left.fill"
     /// The SF Symbol named `phone.arrow.right`
     case phoneArrowRight = "phone.arrow.right"
     /// The SF Symbol named `phone.arrow.right.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case phoneArrowRightFill = "phone.arrow.right.fill"
     /// The SF Symbol named `phone.arrow.up.right`
     case phoneArrowUpRight = "phone.arrow.up.right"
     /// The SF Symbol named `phone.arrow.up.right.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case phoneArrowUpRightFill = "phone.arrow.up.right.fill"
     /// The SF Symbol named `phone.badge.plus`
     case phoneBadgePlus = "phone.badge.plus"
     /// The SF Symbol named `phone.badge.plus.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case phoneBadgePlusFill = "phone.badge.plus.fill"
     /// The SF Symbol named `phone.circle`
     case phoneCircle = "phone.circle"
@@ -2352,16 +2923,35 @@ public enum SFSymbol: String {
     case phoneDownFill = "phone.down.fill"
     /// The SF Symbol named `phone.fill`
     case phoneFill = "phone.fill"
+    /// The SF Symbol named `phone.fill.arrow.down.left`
+    case phoneFillArrowDownLeft = "phone.fill.arrow.down.left"
+    /// The SF Symbol named `phone.fill.arrow.right`
+    case phoneFillArrowRight = "phone.fill.arrow.right"
+    /// The SF Symbol named `phone.fill.arrow.up.right`
+    case phoneFillArrowUpRight = "phone.fill.arrow.up.right"
+    /// The SF Symbol named `phone.fill.badge.plus`
+    case phoneFillBadgePlus = "phone.fill.badge.plus"
     /// The SF Symbol named `photo`
     case photo = "photo"
     /// The SF Symbol named `photo.fill`
     case photoFill = "photo.fill"
+    /// The SF Symbol named `photo.fill.on.rectangle.fill`
+    case photoFillOnRectangleFill = "photo.fill.on.rectangle.fill"
     /// The SF Symbol named `photo.on.rectangle`
     case photoOnRectangle = "photo.on.rectangle"
     /// The SF Symbol named `photo.on.rectangle.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case photoOnRectangleFill = "photo.on.rectangle.fill"
     /// The SF Symbol named `pin`
     case pin = "pin"
+    /// The SF Symbol named `pin.circle`
+    case pinCircle = "pin.circle"
+    /// The SF Symbol named `pin.circle.fill`
+    case pinCircleFill = "pin.circle.fill"
     /// The SF Symbol named `pin.fill`
     case pinFill = "pin.fill"
     /// The SF Symbol named `pin.slash`
@@ -2404,19 +2994,38 @@ public enum SFSymbol: String {
     case plusRectangle = "plus.rectangle"
     /// The SF Symbol named `plus.rectangle.fill`
     case plusRectangleFill = "plus.rectangle.fill"
+    /// The SF Symbol named `plus.rectangle.fill.on.rectangle.fill`
+    case plusRectangleFillOnRectangleFill = "plus.rectangle.fill.on.rectangle.fill"
     /// The SF Symbol named `plus.rectangle.on.rectangle`
     case plusRectangleOnRectangle = "plus.rectangle.on.rectangle"
     /// The SF Symbol named `plus.rectangle.on.rectangle.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case plusRectangleOnRectangleFill = "plus.rectangle.on.rectangle.fill"
     /// The SF Symbol named `plus.slash.minus`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case plusSlashMinus = "plus.slash.minus"
     /// The SF Symbol named `plus.square`
     case plusSquare = "plus.square"
     /// The SF Symbol named `plus.square.fill`
     case plusSquareFill = "plus.square.fill"
+    /// The SF Symbol named `plus.square.fill.on.square.fill`
+    case plusSquareFillOnSquareFill = "plus.square.fill.on.square.fill"
     /// The SF Symbol named `plus.square.on.square`
     case plusSquareOnSquare = "plus.square.on.square"
     /// The SF Symbol named `plus.square.on.square.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case plusSquareOnSquareFill = "plus.square.on.square.fill"
     /// The SF Symbol named `plusminus`
     case plusminus = "plusminus"
@@ -2469,8 +3078,18 @@ public enum SFSymbol: String {
     /// The SF Symbol named `questionmark.video.fill`
     case questionmarkVideoFill = "questionmark.video.fill"
     /// The SF Symbol named `questionmark.video.fill.rtl`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case questionmarkVideoFillRtl = "questionmark.video.fill.rtl"
     /// The SF Symbol named `questionmark.video.rtl`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case questionmarkVideoRtl = "questionmark.video.rtl"
     /// The SF Symbol named `quote.bubble`
     case quoteBubble = "quote.bubble"
@@ -2485,12 +3104,27 @@ public enum SFSymbol: String {
     /// The SF Symbol named `r.square.fill`
     case rSquareFill = "r.square.fill"
     /// The SF Symbol named `radiowaves.left`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case radiowavesLeft = "radiowaves.left"
     /// The SF Symbol named `radiowaves.right`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case radiowavesRight = "radiowaves.right"
     /// The SF Symbol named `rays`
     case rays = "rays"
     /// The SF Symbol named `realtimetext`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case realtimetext = "realtimetext"
     /// The SF Symbol named `recordingtape`
     case recordingtape = "recordingtape"
@@ -2509,19 +3143,42 @@ public enum SFSymbol: String {
     /// The SF Symbol named `rectangle.badge.checkmark`
     case rectangleBadgeCheckmark = "rectangle.badge.checkmark"
     /// The SF Symbol named `rectangle.badge.checkmark.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case rectangleBadgeCheckmarkFill = "rectangle.badge.checkmark.fill"
     /// The SF Symbol named `rectangle.badge.xmark`
     case rectangleBadgeXmark = "rectangle.badge.xmark"
     /// The SF Symbol named `rectangle.badge.xmark.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case rectangleBadgeXmarkFill = "rectangle.badge.xmark.fill"
     /// The SF Symbol named `rectangle.compress.vertical`
     case rectangleCompressVertical = "rectangle.compress.vertical"
     /// The SF Symbol named `rectangle.dock`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case rectangleDock = "rectangle.dock"
     /// The SF Symbol named `rectangle.expand.vertical`
     case rectangleExpandVertical = "rectangle.expand.vertical"
     /// The SF Symbol named `rectangle.fill`
     case rectangleFill = "rectangle.fill"
+    /// The SF Symbol named `rectangle.fill.badge.checkmark`
+    case rectangleFillBadgeCheckmark = "rectangle.fill.badge.checkmark"
+    /// The SF Symbol named `rectangle.fill.badge.xmark`
+    case rectangleFillBadgeXmark = "rectangle.fill.badge.xmark"
+    /// The SF Symbol named `rectangle.fill.on.rectangle.angled.fill`
+    case rectangleFillOnRectangleAngledFill = "rectangle.fill.on.rectangle.angled.fill"
+    /// The SF Symbol named `rectangle.fill.on.rectangle.fill`
+    case rectangleFillOnRectangleFill = "rectangle.fill.on.rectangle.fill"
     /// The SF Symbol named `rectangle.grid.1x2`
     case rectangleGrid1x2 = "rectangle.grid.1x2"
     /// The SF Symbol named `rectangle.grid.1x2.fill`
@@ -2539,8 +3196,18 @@ public enum SFSymbol: String {
     /// The SF Symbol named `rectangle.on.rectangle.angled`
     case rectangleOnRectangleAngled = "rectangle.on.rectangle.angled"
     /// The SF Symbol named `rectangle.on.rectangle.angled.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case rectangleOnRectangleAngledFill = "rectangle.on.rectangle.angled.fill"
     /// The SF Symbol named `rectangle.on.rectangle.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case rectangleOnRectangleFill = "rectangle.on.rectangle.fill"
     /// The SF Symbol named `rectangle.split.3x1`
     case rectangleSplit3x1 = "rectangle.split.3x1"
@@ -2555,30 +3222,74 @@ public enum SFSymbol: String {
     /// The SF Symbol named `rectangle.stack.badge.minus`
     case rectangleStackBadgeMinus = "rectangle.stack.badge.minus"
     /// The SF Symbol named `rectangle.stack.badge.minus.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case rectangleStackBadgeMinusFill = "rectangle.stack.badge.minus.fill"
+    /// The SF Symbol named `rectangle.stack.badge.person.crop`
+    case rectangleStackBadgePersonCrop = "rectangle.stack.badge.person.crop"
     /// The SF Symbol named `rectangle.stack.badge.plus`
     case rectangleStackBadgePlus = "rectangle.stack.badge.plus"
     /// The SF Symbol named `rectangle.stack.badge.plus.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case rectangleStackBadgePlusFill = "rectangle.stack.badge.plus.fill"
     /// The SF Symbol named `rectangle.stack.fill`
     case rectangleStackFill = "rectangle.stack.fill"
+    /// The SF Symbol named `rectangle.stack.fill.badge.minus`
+    case rectangleStackFillBadgeMinus = "rectangle.stack.fill.badge.minus"
+    /// The SF Symbol named `rectangle.stack.fill.badge.person.crop`
+    case rectangleStackFillBadgePersonCrop = "rectangle.stack.fill.badge.person.crop"
+    /// The SF Symbol named `rectangle.stack.fill.badge.plus`
+    case rectangleStackFillBadgePlus = "rectangle.stack.fill.badge.plus"
     /// The SF Symbol named `rectangle.stack.person.crop`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case rectangleStackPersonCrop = "rectangle.stack.person.crop"
     /// The SF Symbol named `rectangle.stack.person.crop.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case rectangleStackPersonCropFill = "rectangle.stack.person.crop.fill"
     /// The SF Symbol named `repeat`
-    case _repeat = "repeat"
+    case `repeat` = "repeat"
+    /// The SF Symbol named `repeat`
+    @available(*, deprecated, renamed: "repeat")
+    public static let _repeat = Self.repeat
     /// The SF Symbol named `repeat.1`
     case repeat1 = "repeat.1"
     /// The SF Symbol named `return`
-    case _return = "return"
+    case `return` = "return"
+    /// The SF Symbol named `return`
+    @available(*, deprecated, renamed: "return")
+    public static let _return = Self.return
     /// The SF Symbol named `rhombus`
     case rhombus = "rhombus"
     /// The SF Symbol named `rhombus.fill`
     case rhombusFill = "rhombus.fill"
     /// The SF Symbol named `ring.circle`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case ringCircle = "ring.circle"
     /// The SF Symbol named `ring.circle.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case ringCircleFill = "ring.circle.fill"
     /// The SF Symbol named `rosette`
     case rosette = "rosette"
@@ -2620,6 +3331,8 @@ public enum SFSymbol: String {
     case safariFill = "safari.fill"
     /// The SF Symbol named `scissors`
     case scissors = "scissors"
+    /// The SF Symbol named `scissors.badge.ellipsis`
+    case scissorsBadgeEllipsis = "scissors.badge.ellipsis"
     /// The SF Symbol named `scope`
     case scope = "scope"
     /// The SF Symbol named `scribble`
@@ -2627,19 +3340,48 @@ public enum SFSymbol: String {
     /// The SF Symbol named `selection.pin.in.out`
     case selectionPinInOut = "selection.pin.in.out"
     /// The SF Symbol named `sheqelsign.circle`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case sheqelsignCircle = "sheqelsign.circle"
     /// The SF Symbol named `sheqelsign.circle.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case sheqelsignCircleFill = "sheqelsign.circle.fill"
     /// The SF Symbol named `sheqelsign.square`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case sheqelsignSquare = "sheqelsign.square"
     /// The SF Symbol named `sheqelsign.square.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case sheqelsignSquareFill = "sheqelsign.square.fill"
     /// The SF Symbol named `shield`
     case shield = "shield"
     /// The SF Symbol named `shield.fill`
     case shieldFill = "shield.fill"
     /// The SF Symbol named `shield.lefthalf.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case shieldLefthalfFill = "shield.lefthalf.fill"
+    /// The SF Symbol named `shield.slash`
+    case shieldSlash = "shield.slash"
+    /// The SF Symbol named `shield.slash.fill`
+    case shieldSlashFill = "shield.slash.fill"
     /// The SF Symbol named `shift`
     case shift = "shift"
     /// The SF Symbol named `shift.fill`
@@ -2664,20 +3406,59 @@ public enum SFSymbol: String {
     case sliderHorizontalBelowRectangle = "slider.horizontal.below.rectangle"
     /// The SF Symbol named `slowmo`
     case slowmo = "slowmo"
+    /// The SF Symbol named `smallcircle.circle`
+    case smallcircleCircle = "smallcircle.circle"
+    /// The SF Symbol named `smallcircle.circle.fill`
+    case smallcircleCircleFill = "smallcircle.circle.fill"
+    /// The SF Symbol named `smallcircle.fill.circle`
+    case smallcircleFillCircle = "smallcircle.fill.circle"
+    /// The SF Symbol named `smallcircle.fill.circle.fill`
+    case smallcircleFillCircleFill = "smallcircle.fill.circle.fill"
     /// The SF Symbol named `smiley`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case smiley = "smiley"
     /// The SF Symbol named `smiley.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case smileyFill = "smiley.fill"
     /// The SF Symbol named `smoke`
     case smoke = "smoke"
     /// The SF Symbol named `smoke.fill`
     case smokeFill = "smoke.fill"
     /// The SF Symbol named `snow`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case snow = "snow"
     /// The SF Symbol named `sparkles`
     case sparkles = "sparkles"
+    /// The SF Symbol named `speaker`
+    case speaker = "speaker"
+    /// The SF Symbol named `speaker.fill`
+    case speakerFill = "speaker.fill"
+    /// The SF Symbol named `speaker.slash`
+    case speakerSlash = "speaker.slash"
+    /// The SF Symbol named `speaker.slash.fill`
+    case speakerSlashFill = "speaker.slash.fill"
+    /// The SF Symbol named `speaker.zzz`
+    case speakerZzz = "speaker.zzz"
+    /// The SF Symbol named `speaker.zzz.fill`
+    case speakerZzzFill = "speaker.zzz.fill"
     /// The SF Symbol named `speedometer`
     case speedometer = "speedometer"
+    /// The SF Symbol named `sportscourt`
+    case sportscourt = "sportscourt"
+    /// The SF Symbol named `sportscourt.fill`
+    case sportscourtFill = "sportscourt.fill"
     /// The SF Symbol named `square`
     case square = "square"
     /// The SF Symbol named `square.and.arrow.down`
@@ -2707,7 +3488,16 @@ public enum SFSymbol: String {
     /// The SF Symbol named `square.fill.and.line.vertical.and.square`
     case squareFillAndLineVerticalAndSquare = "square.fill.and.line.vertical.and.square"
     /// The SF Symbol named `square.fill.and.line.vertical.square.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case squareFillAndLineVerticalSquareFill = "square.fill.and.line.vertical.square.fill"
+    /// The SF Symbol named `square.fill.on.circle.fill`
+    case squareFillOnCircleFill = "square.fill.on.circle.fill"
+    /// The SF Symbol named `square.fill.on.square.fill`
+    case squareFillOnSquareFill = "square.fill.on.square.fill"
     /// The SF Symbol named `square.grid.2x2`
     case squareGrid2x2 = "square.grid.2x2"
     /// The SF Symbol named `square.grid.2x2.fill`
@@ -2719,16 +3509,36 @@ public enum SFSymbol: String {
     /// The SF Symbol named `square.grid.4x3.fill`
     case squareGrid4x3Fill = "square.grid.4x3.fill"
     /// The SF Symbol named `square.lefthalf.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case squareLefthalfFill = "square.lefthalf.fill"
     /// The SF Symbol named `square.on.circle`
     case squareOnCircle = "square.on.circle"
     /// The SF Symbol named `square.on.circle.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case squareOnCircleFill = "square.on.circle.fill"
     /// The SF Symbol named `square.on.square`
     case squareOnSquare = "square.on.square"
     /// The SF Symbol named `square.on.square.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case squareOnSquareFill = "square.on.square.fill"
     /// The SF Symbol named `square.righthalf.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case squareRighthalfFill = "square.righthalf.fill"
     /// The SF Symbol named `square.split.1x2`
     case squareSplit1x2 = "square.split.1x2"
@@ -2745,6 +3555,11 @@ public enum SFSymbol: String {
     /// The SF Symbol named `square.stack`
     case squareStack = "square.stack"
     /// The SF Symbol named `square.stack.3d.down.dottedline`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case squareStack3dDownDottedline = "square.stack.3d.down.dottedline"
     /// The SF Symbol named `square.stack.3d.down.right`
     case squareStack3dDownRight = "square.stack.3d.down.right"
@@ -2771,6 +3586,11 @@ public enum SFSymbol: String {
     /// The SF Symbol named `star.fill`
     case starFill = "star.fill"
     /// The SF Symbol named `star.lefthalf.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case starLefthalfFill = "star.lefthalf.fill"
     /// The SF Symbol named `star.slash`
     case starSlash = "star.slash"
@@ -2790,6 +3610,10 @@ public enum SFSymbol: String {
     case sterlingsignSquareFill = "sterlingsign.square.fill"
     /// The SF Symbol named `stop`
     case stop = "stop"
+    /// The SF Symbol named `stop.circle`
+    case stopCircle = "stop.circle"
+    /// The SF Symbol named `stop.circle.fill`
+    case stopCircleFill = "stop.circle.fill"
     /// The SF Symbol named `stop.fill`
     case stopFill = "stop.fill"
     /// The SF Symbol named `stopwatch`
@@ -2798,6 +3622,8 @@ public enum SFSymbol: String {
     case stopwatchFill = "stopwatch.fill"
     /// The SF Symbol named `strikethrough`
     case strikethrough = "strikethrough"
+    /// The SF Symbol named `studentdesk`
+    case studentdesk = "studentdesk"
     /// The SF Symbol named `suit.club`
     case suitClub = "suit.club"
     /// The SF Symbol named `suit.club.fill`
@@ -2841,8 +3667,18 @@ public enum SFSymbol: String {
     /// The SF Symbol named `sunset.fill`
     case sunsetFill = "sunset.fill"
     /// The SF Symbol named `t.bubble`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case tBubble = "t.bubble"
     /// The SF Symbol named `t.bubble.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case tBubbleFill = "t.bubble.fill"
     /// The SF Symbol named `t.circle`
     case tCircle = "t.circle"
@@ -2853,19 +3689,45 @@ public enum SFSymbol: String {
     /// The SF Symbol named `t.square.fill`
     case tSquareFill = "t.square.fill"
     /// The SF Symbol named `table`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case table = "table"
     /// The SF Symbol named `table.badge.more`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case tableBadgeMore = "table.badge.more"
     /// The SF Symbol named `table.badge.more.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case tableBadgeMoreFill = "table.badge.more.fill"
     /// The SF Symbol named `table.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case tableFill = "table.fill"
     /// The SF Symbol named `tag`
     case tag = "tag"
+    /// The SF Symbol named `tag.circle`
+    case tagCircle = "tag.circle"
+    /// The SF Symbol named `tag.circle.fill`
+    case tagCircleFill = "tag.circle.fill"
     /// The SF Symbol named `tag.fill`
     case tagFill = "tag.fill"
     /// The SF Symbol named `teletype`
     case teletype = "teletype"
+    /// The SF Symbol named `teletype.answer`
+    case teletypeAnswer = "teletype.answer"
     /// The SF Symbol named `tengesign.circle`
     case tengesignCircle = "tengesign.circle"
     /// The SF Symbol named `tengesign.circle.fill`
@@ -2897,10 +3759,25 @@ public enum SFSymbol: String {
     /// The SF Symbol named `text.bubble.fill`
     case textBubbleFill = "text.bubble.fill"
     /// The SF Symbol named `text.chevron.left`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case textChevronLeft = "text.chevron.left"
     /// The SF Symbol named `text.chevron.right`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case textChevronRight = "text.chevron.right"
     /// The SF Symbol named `text.cursor`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case textCursor = "text.cursor"
     /// The SF Symbol named `text.insert`
     case textInsert = "text.insert"
@@ -2913,6 +3790,11 @@ public enum SFSymbol: String {
     /// The SF Symbol named `text.quote`
     case textQuote = "text.quote"
     /// The SF Symbol named `textbox`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case textbox = "textbox"
     /// The SF Symbol named `textformat`
     case textformat = "textformat"
@@ -2946,6 +3828,8 @@ public enum SFSymbol: String {
     case tortoise = "tortoise"
     /// The SF Symbol named `tortoise.fill`
     case tortoiseFill = "tortoise.fill"
+    /// The SF Symbol named `tram.fill`
+    case tramFill = "tram.fill"
     /// The SF Symbol named `trash`
     case trash = "trash"
     /// The SF Symbol named `trash.circle`
@@ -2983,8 +3867,18 @@ public enum SFSymbol: String {
     /// The SF Symbol named `triangle.fill`
     case triangleFill = "triangle.fill"
     /// The SF Symbol named `triangle.lefthalf.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case triangleLefthalfFill = "triangle.lefthalf.fill"
     /// The SF Symbol named `triangle.righthalf.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case triangleRighthalfFill = "triangle.righthalf.fill"
     /// The SF Symbol named `tropicalstorm`
     case tropicalstorm = "tropicalstorm"
@@ -3015,8 +3909,18 @@ public enum SFSymbol: String {
     /// The SF Symbol named `tv.fill`
     case tvFill = "tv.fill"
     /// The SF Symbol named `tv.music.note`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case tvMusicNote = "tv.music.note"
     /// The SF Symbol named `tv.music.note.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case tvMusicNoteFill = "tv.music.note.fill"
     /// The SF Symbol named `u.circle`
     case uCircle = "u.circle"
@@ -3047,6 +3951,11 @@ public enum SFSymbol: String {
     /// The SF Symbol named `video.badge.plus`
     case videoBadgePlus = "video.badge.plus"
     /// The SF Symbol named `video.badge.plus.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case videoBadgePlusFill = "video.badge.plus.fill"
     /// The SF Symbol named `video.circle`
     case videoCircle = "video.circle"
@@ -3069,32 +3978,102 @@ public enum SFSymbol: String {
     /// The SF Symbol named `viewfinder.circle.fill`
     case viewfinderCircleFill = "viewfinder.circle.fill"
     /// The SF Symbol named `volume`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case volume = "volume"
     /// The SF Symbol named `volume.1`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case volume1 = "volume.1"
     /// The SF Symbol named `volume.1.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case volume1Fill = "volume.1.fill"
     /// The SF Symbol named `volume.2`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case volume2 = "volume.2"
     /// The SF Symbol named `volume.2.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case volume2Fill = "volume.2.fill"
     /// The SF Symbol named `volume.3`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case volume3 = "volume.3"
     /// The SF Symbol named `volume.3.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case volume3Fill = "volume.3.fill"
     /// The SF Symbol named `volume.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case volumeFill = "volume.fill"
     /// The SF Symbol named `volume.slash`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case volumeSlash = "volume.slash"
     /// The SF Symbol named `volume.slash.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case volumeSlashFill = "volume.slash.fill"
     /// The SF Symbol named `volume.slash.fill.rtl`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case volumeSlashFillRtl = "volume.slash.fill.rtl"
     /// The SF Symbol named `volume.slash.rtl`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case volumeSlashRtl = "volume.slash.rtl"
     /// The SF Symbol named `volume.zzz`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case volumeZzz = "volume.zzz"
     /// The SF Symbol named `volume.zzz.fill`
+    @available(iOS, deprecated: 14.0)
+    @available(macOS, deprecated: 11.0)
+    @available(macCatalyst, deprecated: 14.0)
+    @available(watchOS, deprecated: 7.0)
+    @available(tvOS, deprecated: 14.0)
     case volumeZzzFill = "volume.zzz.fill"
     /// The SF Symbol named `w.circle`
     case wCircle = "w.circle"
@@ -3114,6 +4093,10 @@ public enum SFSymbol: String {
     case wandAndStarsInverse = "wand.and.stars.inverse"
     /// The SF Symbol named `waveform`
     case waveform = "waveform"
+    /// The SF Symbol named `waveform.circle`
+    case waveformCircle = "waveform.circle"
+    /// The SF Symbol named `waveform.circle.fill`
+    case waveformCircleFill = "waveform.circle.fill"
     /// The SF Symbol named `waveform.path`
     case waveformPath = "waveform.path"
     /// The SF Symbol named `waveform.path.badge.minus`
@@ -3176,6 +4159,10 @@ public enum SFSymbol: String {
     case xmarkSeal = "xmark.seal"
     /// The SF Symbol named `xmark.seal.fill`
     case xmarkSealFill = "xmark.seal.fill"
+    /// The SF Symbol named `xmark.shield`
+    case xmarkShield = "xmark.shield"
+    /// The SF Symbol named `xmark.shield.fill`
+    case xmarkShieldFill = "xmark.shield.fill"
     /// The SF Symbol named `xmark.square`
     case xmarkSquare = "xmark.square"
     /// The SF Symbol named `xmark.square.fill`
@@ -3206,7 +4193,8 @@ public enum SFSymbol: String {
     case zSquareFill = "z.square.fill"
     /// The SF Symbol named `zzz`
     case zzz = "zzz"
-
+    
+    // - MARK: 14.0/11.0/7.0
     /// The SF Symbol named `4k.tv`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
     case _4kTv = "4k.tv"
@@ -3791,9 +4779,19 @@ public enum SFSymbol: String {
     case boltCarFill = "bolt.car.fill"
     /// The SF Symbol named `bolt.fill.batteryblock`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case boltFillBatteryblock = "bolt.fill.batteryblock"
     /// The SF Symbol named `bolt.fill.batteryblock.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case boltFillBatteryblockFill = "bolt.fill.batteryblock.fill"
     /// The SF Symbol named `bolt.heart`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
@@ -3933,6 +4931,7 @@ public enum SFSymbol: String {
     /// The SF Symbol named `car.circle.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
     case carCircleFill = "car.circle.fill"
+    /// The SF Symbol named `case`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
     case `case` = "case"
     /// The SF Symbol named `case.fill`
@@ -4000,6 +4999,11 @@ public enum SFSymbol: String {
     case chevronForwardSquareFill = "chevron.forward.square.fill"
     /// The SF Symbol named `circle.bottomhalf.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case circleBottomhalfFill = "circle.bottomhalf.fill"
     /// The SF Symbol named `circle.circle`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
@@ -4012,6 +5016,11 @@ public enum SFSymbol: String {
     case circleDashed = "circle.dashed"
     /// The SF Symbol named `circle.dashed.inset.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case circleDashedInsetFill = "circle.dashed.inset.fill"
     /// The SF Symbol named `circle.fill.square.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
@@ -4039,6 +5048,11 @@ public enum SFSymbol: String {
     case circleSquare = "circle.square"
     /// The SF Symbol named `circle.tophalf.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case circleTophalfFill = "circle.tophalf.fill"
     /// The SF Symbol named `circlebadge`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
@@ -4054,15 +5068,35 @@ public enum SFSymbol: String {
     case circlebadgeFill = "circlebadge.fill"
     /// The SF Symbol named `circles.hexagongrid`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case circlesHexagongrid = "circles.hexagongrid"
     /// The SF Symbol named `circles.hexagongrid.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case circlesHexagongridFill = "circles.hexagongrid.fill"
     /// The SF Symbol named `circles.hexagonpath`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case circlesHexagonpath = "circles.hexagonpath"
     /// The SF Symbol named `circles.hexagonpath.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case circlesHexagonpathFill = "circles.hexagonpath.fill"
     /// The SF Symbol named `clock.arrow.circlepath`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
@@ -4378,9 +5412,19 @@ public enum SFSymbol: String {
     case envelopeArrowTriangleBranchFill = "envelope.arrow.triangle.branch.fill"
     /// The SF Symbol named `envelope.badge.shield.leadinghalf.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case envelopeBadgeShieldLeadinghalfFill = "envelope.badge.shield.leadinghalf.fill"
     /// The SF Symbol named `envelope.fill.badge.shield.trailinghalf.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case envelopeFillBadgeShieldTrailinghalfFill = "envelope.fill.badge.shield.trailinghalf.fill"
     /// The SF Symbol named `esim`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
@@ -4492,6 +5536,11 @@ public enum SFSymbol: String {
     case faxmachine = "faxmachine"
     /// The SF Symbol named `fiberchannel`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case fiberchannel = "fiberchannel"
     /// The SF Symbol named `figure.stand`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
@@ -4549,12 +5598,22 @@ public enum SFSymbol: String {
     case fn = "fn"
     /// The SF Symbol named `folder.badge.gear`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case folderBadgeGear = "folder.badge.gear"
     /// The SF Symbol named `folder.badge.questionmark`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
     case folderBadgeQuestionmark = "folder.badge.questionmark"
     /// The SF Symbol named `folder.fill.badge.gear`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case folderFillBadgeGear = "folder.fill.badge.gear"
     /// The SF Symbol named `folder.fill.badge.questionmark`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
@@ -4609,6 +5668,11 @@ public enum SFSymbol: String {
     case gyroscope = "gyroscope"
     /// The SF Symbol named `h.square.fill.on.square.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case hSquareFillOnSquareFill = "h.square.fill.on.square.fill"
     /// The SF Symbol named `h.square.on.square`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
@@ -4669,6 +5733,11 @@ public enum SFSymbol: String {
     case headphonesCircleFill = "headphones.circle.fill"
     /// The SF Symbol named `hearingaid.ear`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case hearingaidEar = "hearingaid.ear"
     /// The SF Symbol named `heart.text.square`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
@@ -4774,6 +5843,11 @@ public enum SFSymbol: String {
     case ipodtouch = "ipodtouch"
     /// The SF Symbol named `j.square.fill.on.square.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case jSquareFillOnSquareFill = "j.square.fill.on.square.fill"
     /// The SF Symbol named `j.square.on.square`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
@@ -4813,9 +5887,19 @@ public enum SFSymbol: String {
     case lJoystick = "l.joystick"
     /// The SF Symbol named `l.joystick.down`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case lJoystickDown = "l.joystick.down"
     /// The SF Symbol named `l.joystick.down.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case lJoystickDownFill = "l.joystick.down.fill"
     /// The SF Symbol named `l.joystick.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
@@ -4852,6 +5936,11 @@ public enum SFSymbol: String {
     case laptopcomputerAndIphone = "laptopcomputer.and.iphone"
     /// The SF Symbol named `lasso.sparkles`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case lassoSparkles = "lasso.sparkles"
     /// The SF Symbol named `latch.2.case`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
@@ -4900,15 +5989,35 @@ public enum SFSymbol: String {
     case lineDiagonalArrow = "line.diagonal.arrow"
     /// The SF Symbol named `line.horizontal.2.decrease.circle`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case lineHorizontal2DecreaseCircle = "line.horizontal.2.decrease.circle"
     /// The SF Symbol named `line.horizontal.2.decrease.circle.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case lineHorizontal2DecreaseCircleFill = "line.horizontal.2.decrease.circle.fill"
     /// The SF Symbol named `line.horizontal.3.circle`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case lineHorizontal3Circle = "line.horizontal.3.circle"
     /// The SF Symbol named `line.horizontal.3.circle.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case lineHorizontal3CircleFill = "line.horizontal.3.circle.fill"
     /// The SF Symbol named `line.horizontal.star.fill.line.horizontal`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
@@ -5212,12 +6321,27 @@ public enum SFSymbol: String {
     case personCropCircleBadgeQuestionmark = "person.crop.circle.badge.questionmark"
     /// The SF Symbol named `person.crop.circle.fill.badge.exclamationmark`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case personCropCircleFillBadgeExclamationmark = "person.crop.circle.fill.badge.exclamationmark"
     /// The SF Symbol named `person.crop.circle.fill.badge.questionmark`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case personCropCircleFillBadgeQuestionmark = "person.crop.circle.fill.badge.questionmark"
     /// The SF Symbol named `person.crop.square.fill.and.at.rectangle`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case personCropSquareFillAndAtRectangle = "person.crop.square.fill.and.at.rectangle"
     /// The SF Symbol named `person.fill.and.arrow.left.and.arrow.right`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
@@ -5317,6 +6441,11 @@ public enum SFSymbol: String {
     case plusMessageFill = "plus.message.fill"
     /// The SF Symbol named `plus.rectangle.fill.on.folder.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case plusRectangleFillOnFolderFill = "plus.rectangle.fill.on.folder.fill"
     /// The SF Symbol named `plus.rectangle.on.folder`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
@@ -5332,6 +6461,11 @@ public enum SFSymbol: String {
     case plusViewfinder = "plus.viewfinder"
     /// The SF Symbol named `point.fill.topleft.down.curvedto.point.fill.bottomright.up`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case pointFillTopleftDownCurvedtoPointFillBottomrightUp = "point.fill.topleft.down.curvedto.point.fill.bottomright.up"
     /// The SF Symbol named `point.topleft.down.curvedto.point.bottomright.up`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
@@ -5353,9 +6487,19 @@ public enum SFSymbol: String {
     case printerDotmatrixFill = "printer.dotmatrix.fill"
     /// The SF Symbol named `printer.dotmatrix.fill.and.paper.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case printerDotmatrixFillAndPaperFill = "printer.dotmatrix.fill.and.paper.fill"
     /// The SF Symbol named `printer.fill.and.paper.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case printerFillAndPaperFill = "printer.fill.and.paper.fill"
     /// The SF Symbol named `puzzlepiece`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
@@ -5383,9 +6527,19 @@ public enum SFSymbol: String {
     case rJoystick = "r.joystick"
     /// The SF Symbol named `r.joystick.down`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case rJoystickDown = "r.joystick.down"
     /// The SF Symbol named `r.joystick.down.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case rJoystickDownFill = "r.joystick.down.fill"
     /// The SF Symbol named `r.joystick.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
@@ -5398,6 +6552,11 @@ public enum SFSymbol: String {
     case rRectangleRoundedbottomFill = "r.rectangle.roundedbottom.fill"
     /// The SF Symbol named `r.square.fill.on.square.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case rSquareFillOnSquareFill = "r.square.fill.on.square.fill"
     /// The SF Symbol named `r.square.on.square`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
@@ -5458,9 +6617,19 @@ public enum SFSymbol: String {
     case rectangleBadgePlus = "rectangle.badge.plus"
     /// The SF Symbol named `rectangle.bottomthird.inset.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case rectangleBottomthirdInsetFill = "rectangle.bottomthird.inset.fill"
     /// The SF Symbol named `rectangle.center.inset.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case rectangleCenterInsetFill = "rectangle.center.inset.fill"
     /// The SF Symbol named `rectangle.connected.to.line.below`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
@@ -5482,39 +6651,94 @@ public enum SFSymbol: String {
     case rectangleFillBadgePlus = "rectangle.fill.badge.plus"
     /// The SF Symbol named `rectangle.fill.on.rectangle.fill.circle`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case rectangleFillOnRectangleFillCircle = "rectangle.fill.on.rectangle.fill.circle"
     /// The SF Symbol named `rectangle.fill.on.rectangle.fill.circle.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case rectangleFillOnRectangleFillCircleFill = "rectangle.fill.on.rectangle.fill.circle.fill"
     /// The SF Symbol named `rectangle.fill.on.rectangle.fill.slash.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case rectangleFillOnRectangleFillSlashFill = "rectangle.fill.on.rectangle.fill.slash.fill"
     /// The SF Symbol named `rectangle.inset.bottomleft.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case rectangleInsetBottomleftFill = "rectangle.inset.bottomleft.fill"
     /// The SF Symbol named `rectangle.inset.bottomright.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case rectangleInsetBottomrightFill = "rectangle.inset.bottomright.fill"
     /// The SF Symbol named `rectangle.inset.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
     case rectangleInsetFill = "rectangle.inset.fill"
     /// The SF Symbol named `rectangle.inset.topleft.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case rectangleInsetTopleftFill = "rectangle.inset.topleft.fill"
     /// The SF Symbol named `rectangle.inset.topright.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case rectangleInsetToprightFill = "rectangle.inset.topright.fill"
     /// The SF Symbol named `rectangle.lefthalf.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case rectangleLefthalfFill = "rectangle.lefthalf.fill"
     /// The SF Symbol named `rectangle.lefthalf.inset.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case rectangleLefthalfInsetFill = "rectangle.lefthalf.inset.fill"
     /// The SF Symbol named `rectangle.lefthalf.inset.fill.arrow.left`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case rectangleLefthalfInsetFillArrowLeft = "rectangle.lefthalf.inset.fill.arrow.left"
     /// The SF Symbol named `rectangle.leftthird.inset.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case rectangleLeftthirdInsetFill = "rectangle.leftthird.inset.fill"
     /// The SF Symbol named `rectangle.on.rectangle.slash`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
@@ -5533,15 +6757,35 @@ public enum SFSymbol: String {
     case rectanglePortraitFill = "rectangle.portrait.fill"
     /// The SF Symbol named `rectangle.righthalf.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case rectangleRighthalfFill = "rectangle.righthalf.fill"
     /// The SF Symbol named `rectangle.righthalf.inset.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case rectangleRighthalfInsetFill = "rectangle.righthalf.inset.fill"
     /// The SF Symbol named `rectangle.righthalf.inset.fill.arrow.right`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case rectangleRighthalfInsetFillArrowRight = "rectangle.righthalf.inset.fill.arrow.right"
     /// The SF Symbol named `rectangle.rightthird.inset.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case rectangleRightthirdInsetFill = "rectangle.rightthird.inset.fill"
     /// The SF Symbol named `rectangle.roundedbottom`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
@@ -5656,6 +6900,11 @@ public enum SFSymbol: String {
     case shekelsignSquareFill = "shekelsign.square.fill"
     /// The SF Symbol named `shield.lefthalf.fill.slash`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case shieldLefthalfFillSlash = "shield.lefthalf.fill.slash"
     /// The SF Symbol named `shippingbox`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
@@ -5725,6 +6974,11 @@ public enum SFSymbol: String {
     case sparklesRectangleStackFill = "sparkles.rectangle.stack.fill"
     /// The SF Symbol named `sparkles.square.fill.on.square`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case sparklesSquareFillOnSquare = "sparkles.square.fill.on.square"
     /// The SF Symbol named `speaker.slash.circle`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
@@ -5782,6 +7036,11 @@ public enum SFSymbol: String {
     case squareAndAtRectangle = "square.and.at.rectangle"
     /// The SF Symbol named `square.bottomhalf.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case squareBottomhalfFill = "square.bottomhalf.fill"
     /// The SF Symbol named `square.circle`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
@@ -5794,9 +7053,19 @@ public enum SFSymbol: String {
     case squareDashed = "square.dashed"
     /// The SF Symbol named `square.dashed.inset.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case squareDashedInsetFill = "square.dashed.inset.fill"
     /// The SF Symbol named `square.fill.on.square`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case squareFillOnSquare = "square.fill.on.square"
     /// The SF Symbol named `square.fill.text.grid.1x2`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
@@ -5818,36 +7087,86 @@ public enum SFSymbol: String {
     case squareGrid3x3 = "square.grid.3x3"
     /// The SF Symbol named `square.grid.3x3.bottomleft.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case squareGrid3x3BottomleftFill = "square.grid.3x3.bottomleft.fill"
     /// The SF Symbol named `square.grid.3x3.bottommiddle.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case squareGrid3x3BottommiddleFill = "square.grid.3x3.bottommiddle.fill"
     /// The SF Symbol named `square.grid.3x3.bottomright.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case squareGrid3x3BottomrightFill = "square.grid.3x3.bottomright.fill"
     /// The SF Symbol named `square.grid.3x3.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
     case squareGrid3x3Fill = "square.grid.3x3.fill"
     /// The SF Symbol named `square.grid.3x3.fill.square`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case squareGrid3x3FillSquare = "square.grid.3x3.fill.square"
     /// The SF Symbol named `square.grid.3x3.middle.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case squareGrid3x3MiddleFill = "square.grid.3x3.middle.fill"
     /// The SF Symbol named `square.grid.3x3.middleleft.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case squareGrid3x3MiddleleftFill = "square.grid.3x3.middleleft.fill"
     /// The SF Symbol named `square.grid.3x3.middleright.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case squareGrid3x3MiddlerightFill = "square.grid.3x3.middleright.fill"
     /// The SF Symbol named `square.grid.3x3.topleft.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case squareGrid3x3TopleftFill = "square.grid.3x3.topleft.fill"
     /// The SF Symbol named `square.grid.3x3.topmiddle.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case squareGrid3x3TopmiddleFill = "square.grid.3x3.topmiddle.fill"
     /// The SF Symbol named `square.grid.3x3.topright.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case squareGrid3x3ToprightFill = "square.grid.3x3.topright.fill"
     /// The SF Symbol named `square.on.square.dashed`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
@@ -5899,6 +7218,11 @@ public enum SFSymbol: String {
     case squareStack3dUpBadgeAFill = "square.stack.3d.up.badge.a.fill"
     /// The SF Symbol named `square.tophalf.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case squareTophalfFill = "square.tophalf.fill"
     /// The SF Symbol named `squareshape`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
@@ -5926,6 +7250,11 @@ public enum SFSymbol: String {
     case squareshapeSquareshapeDashed = "squareshape.squareshape.dashed"
     /// The SF Symbol named `star.leadinghalf.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case starLeadinghalfFill = "star.leadinghalf.fill"
     /// The SF Symbol named `star.square`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
@@ -5956,6 +7285,11 @@ public enum SFSymbol: String {
     case tablecellsBadgeEllipsis = "tablecells.badge.ellipsis"
     /// The SF Symbol named `tablecells.badge.ellipsis.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case tablecellsBadgeEllipsisFill = "tablecells.badge.ellipsis.fill"
     /// The SF Symbol named `tablecells.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
@@ -6034,6 +7368,11 @@ public enum SFSymbol: String {
     case tramCircleFill = "tram.circle.fill"
     /// The SF Symbol named `tram.tunnel.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
+    @available(iOS, deprecated: 15.0)
+    @available(macOS, deprecated: 12.0)
+    @available(macCatalyst, deprecated: 15.0)
+    @available(watchOS, deprecated: 8.0)
+    @available(tvOS, deprecated: 15.0)
     case tramTunnelFill = "tram.tunnel.fill"
     /// The SF Symbol named `tray.circle`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
@@ -6161,7 +7500,180 @@ public enum SFSymbol: String {
     /// The SF Symbol named `zr.rectangle.roundedtop.fill`
     @available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
     case zrRectangleRoundedtopFill = "zr.rectangle.roundedtop.fill"
+    
+    // - MARK: 14.2/11.0/7.1
+    /// The SF Symbol named `aqi.high`
+    @available(iOS 14.2, macOS 11.0, macCatalyst 14.2, watchOS 7.1, tvOS 14.2, *)
+    case aqiHigh = "aqi.high"
+    /// The SF Symbol named `aqi.low`
+    @available(iOS 14.2, macOS 11.0, macCatalyst 14.2, watchOS 7.1, tvOS 14.2, *)
+    case aqiLow = "aqi.low"
+    /// The SF Symbol named `aqi.medium`
+    @available(iOS 14.2, macOS 11.0, macCatalyst 14.2, watchOS 7.1, tvOS 14.2, *)
+    case aqiMedium = "aqi.medium"
+    /// The SF Symbol named `brazilianrealsign.circle`
+    @available(iOS 14.2, macOS 11.0, macCatalyst 14.2, watchOS 7.1, tvOS 14.2, *)
+    case brazilianrealsignCircle = "brazilianrealsign.circle"
+    /// The SF Symbol named `brazilianrealsign.circle.fill`
+    @available(iOS 14.2, macOS 11.0, macCatalyst 14.2, watchOS 7.1, tvOS 14.2, *)
+    case brazilianrealsignCircleFill = "brazilianrealsign.circle.fill"
+    /// The SF Symbol named `brazilianrealsign.square`
+    @available(iOS 14.2, macOS 11.0, macCatalyst 14.2, watchOS 7.1, tvOS 14.2, *)
+    case brazilianrealsignSquare = "brazilianrealsign.square"
+    /// The SF Symbol named `brazilianrealsign.square.fill`
+    @available(iOS 14.2, macOS 11.0, macCatalyst 14.2, watchOS 7.1, tvOS 14.2, *)
+    case brazilianrealsignSquareFill = "brazilianrealsign.square.fill"
+    /// The SF Symbol named `cart.circle`
+    @available(iOS 14.2, macOS 11.0, macCatalyst 14.2, watchOS 7.1, tvOS 14.2, *)
+    case cartCircle = "cart.circle"
+    /// The SF Symbol named `cart.circle.fill`
+    @available(iOS 14.2, macOS 11.0, macCatalyst 14.2, watchOS 7.1, tvOS 14.2, *)
+    case cartCircleFill = "cart.circle.fill"
+    /// The SF Symbol named `character`
+    @available(iOS 14.2, macOS 11.0, macCatalyst 14.2, watchOS 7.1, tvOS 14.2, *)
+    case character = "character"
+    /// The SF Symbol named `character.book.closed`
+    @available(iOS 14.2, macOS 11.0, macCatalyst 14.2, watchOS 7.1, tvOS 14.2, *)
+    case characterBookClosed = "character.book.closed"
+    /// The SF Symbol named `character.book.closed.fill`
+    @available(iOS 14.2, macOS 11.0, macCatalyst 14.2, watchOS 7.1, tvOS 14.2, *)
+    case characterBookClosedFill = "character.book.closed.fill"
+    /// The SF Symbol named `clock.arrow.2.circlepath`
+    @available(iOS 14.2, macOS 11.0, macCatalyst 14.2, watchOS 7.1, tvOS 14.2, *)
+    case clockArrow2Circlepath = "clock.arrow.2.circlepath"
+    /// The SF Symbol named `directcurrent`
+    @available(iOS 14.2, macOS 11.0, macCatalyst 14.2, watchOS 7.1, tvOS 14.2, *)
+    case directcurrent = "directcurrent"
+    /// The SF Symbol named `exclamationmark.applewatch`
+    @available(iOS 14.2, macOS 11.0, macCatalyst 14.2, watchOS 7.1, tvOS 14.2, *)
+    case exclamationmarkApplewatch = "exclamationmark.applewatch"
+    /// The SF Symbol named `infinity.circle`
+    @available(iOS 14.2, macOS 11.0, macCatalyst 14.2, watchOS 7.1, tvOS 14.2, *)
+    case infinityCircle = "infinity.circle"
+    /// The SF Symbol named `infinity.circle.fill`
+    @available(iOS 14.2, macOS 11.0, macCatalyst 14.2, watchOS 7.1, tvOS 14.2, *)
+    case infinityCircleFill = "infinity.circle.fill"
+    /// The SF Symbol named `ipad.badge.play`
+    @available(iOS 14.2, macOS 11.0, macCatalyst 14.2, watchOS 7.1, tvOS 14.2, *)
+    case ipadBadgePlay = "ipad.badge.play"
+    /// The SF Symbol named `ipad.homebutton.badge.play`
+    @available(iOS 14.2, macOS 11.0, macCatalyst 14.2, watchOS 7.1, tvOS 14.2, *)
+    case ipadHomebuttonBadgePlay = "ipad.homebutton.badge.play"
+    /// The SF Symbol named `ipad.homebutton.landscape.badge.play`
+    @available(iOS 14.2, macOS 11.0, macCatalyst 14.2, watchOS 7.1, tvOS 14.2, *)
+    case ipadHomebuttonLandscapeBadgePlay = "ipad.homebutton.landscape.badge.play"
+    /// The SF Symbol named `ipad.landscape.badge.play`
+    @available(iOS 14.2, macOS 11.0, macCatalyst 14.2, watchOS 7.1, tvOS 14.2, *)
+    case ipadLandscapeBadgePlay = "ipad.landscape.badge.play"
+    /// The SF Symbol named `iphone.badge.play`
+    @available(iOS 14.2, macOS 11.0, macCatalyst 14.2, watchOS 7.1, tvOS 14.2, *)
+    case iphoneBadgePlay = "iphone.badge.play"
+    /// The SF Symbol named `iphone.homebutton.badge.play`
+    @available(iOS 14.2, macOS 11.0, macCatalyst 14.2, watchOS 7.1, tvOS 14.2, *)
+    case iphoneHomebuttonBadgePlay = "iphone.homebutton.badge.play"
+    /// The SF Symbol named `iphone.homebutton.landscape`
+    @available(iOS 14.2, macOS 11.0, macCatalyst 14.2, watchOS 7.1, tvOS 14.2, *)
+    case iphoneHomebuttonLandscape = "iphone.homebutton.landscape"
+    /// The SF Symbol named `iphone.landscape`
+    @available(iOS 14.2, macOS 11.0, macCatalyst 14.2, watchOS 7.1, tvOS 14.2, *)
+    case iphoneLandscape = "iphone.landscape"
+    /// The SF Symbol named `ipodtouch.landscape`
+    @available(iOS 14.2, macOS 11.0, macCatalyst 14.2, watchOS 7.1, tvOS 14.2, *)
+    case ipodtouchLandscape = "ipodtouch.landscape"
+    /// The SF Symbol named `lock.applewatch`
+    @available(iOS 14.2, macOS 11.0, macCatalyst 14.2, watchOS 7.1, tvOS 14.2, *)
+    case lockApplewatch = "lock.applewatch"
+    /// The SF Symbol named `photo.tv`
+    @available(iOS 14.2, macOS 11.0, macCatalyst 14.2, watchOS 7.1, tvOS 14.2, *)
+    case photoTv = "photo.tv"
+    /// The SF Symbol named `play.tv`
+    @available(iOS 14.2, macOS 11.0, macCatalyst 14.2, watchOS 7.1, tvOS 14.2, *)
+    case playTv = "play.tv"
+    /// The SF Symbol named `play.tv.fill`
+    @available(iOS 14.2, macOS 11.0, macCatalyst 14.2, watchOS 7.1, tvOS 14.2, *)
+    case playTvFill = "play.tv.fill"
+    /// The SF Symbol named `rectangle.badge.person.crop`
+    @available(iOS 14.2, macOS 11.0, macCatalyst 14.2, watchOS 7.1, tvOS 14.2, *)
+    case rectangleBadgePersonCrop = "rectangle.badge.person.crop"
+    /// The SF Symbol named `rectangle.fill.badge.person.crop`
+    @available(iOS 14.2, macOS 11.0, macCatalyst 14.2, watchOS 7.1, tvOS 14.2, *)
+    case rectangleFillBadgePersonCrop = "rectangle.fill.badge.person.crop"
+    /// The SF Symbol named `repeat.1.circle`
+    @available(iOS 14.2, macOS 11.0, macCatalyst 14.2, watchOS 7.1, tvOS 14.2, *)
+    case repeat1Circle = "repeat.1.circle"
+    /// The SF Symbol named `repeat.1.circle.fill`
+    @available(iOS 14.2, macOS 11.0, macCatalyst 14.2, watchOS 7.1, tvOS 14.2, *)
+    case repeat1CircleFill = "repeat.1.circle.fill"
+    /// The SF Symbol named `repeat.circle`
+    @available(iOS 14.2, macOS 11.0, macCatalyst 14.2, watchOS 7.1, tvOS 14.2, *)
+    case repeatCircle = "repeat.circle"
+    /// The SF Symbol named `repeat.circle.fill`
+    @available(iOS 14.2, macOS 11.0, macCatalyst 14.2, watchOS 7.1, tvOS 14.2, *)
+    case repeatCircleFill = "repeat.circle.fill"
+    /// The SF Symbol named `shuffle.circle`
+    @available(iOS 14.2, macOS 11.0, macCatalyst 14.2, watchOS 7.1, tvOS 14.2, *)
+    case shuffleCircle = "shuffle.circle"
+    /// The SF Symbol named `shuffle.circle.fill`
+    @available(iOS 14.2, macOS 11.0, macCatalyst 14.2, watchOS 7.1, tvOS 14.2, *)
+    case shuffleCircleFill = "shuffle.circle.fill"
+    /// The SF Symbol named `textformat.size.larger`
+    @available(iOS 14.2, macOS 11.0, macCatalyst 14.2, watchOS 7.1, tvOS 14.2, *)
+    case textformatSizeLarger = "textformat.size.larger"
+    /// The SF Symbol named `textformat.size.smaller`
+    @available(iOS 14.2, macOS 11.0, macCatalyst 14.2, watchOS 7.1, tvOS 14.2, *)
+    case textformatSizeSmaller = "textformat.size.smaller"
+    /// The SF Symbol named `torus`
+    @available(iOS 14.2, macOS 11.0, macCatalyst 14.2, watchOS 7.1, tvOS 14.2, *)
+    case torus = "torus"
+    /// The SF Symbol named `tv.and.mediabox`
+    @available(iOS 14.2, macOS 11.0, macCatalyst 14.2, watchOS 7.1, tvOS 14.2, *)
+    case tvAndMediabox = "tv.and.mediabox"
+    
+    // - MARK: 14.5/11.3/7.4
+    /// The SF Symbol named `airpodsmax`
+    @available(iOS 14.5, macOS 11.3, macCatalyst 14.5, watchOS 7.4, tvOS 14.5, *)
+    case airpodsmax = "airpodsmax"
+    /// The SF Symbol named `applewatch.side.right`
+    @available(iOS 14.5, macOS 11.3, macCatalyst 14.5, watchOS 7.4, tvOS 14.5, *)
+    case applewatchSideRight = "applewatch.side.right"
+    /// The SF Symbol named `character.bubble`
+    @available(iOS 14.5, macOS 11.3, macCatalyst 14.5, watchOS 7.4, tvOS 14.5, *)
+    case characterBubble = "character.bubble"
+    /// The SF Symbol named `character.bubble.fill`
+    @available(iOS 14.5, macOS 11.3, macCatalyst 14.5, watchOS 7.4, tvOS 14.5, *)
+    case characterBubbleFill = "character.bubble.fill"
+    /// The SF Symbol named `character.cursor.ibeam`
+    @available(iOS 14.5, macOS 11.3, macCatalyst 14.5, watchOS 7.4, tvOS 14.5, *)
+    case characterCursorIbeam = "character.cursor.ibeam"
+    /// The SF Symbol named `character.textbox`
+    @available(iOS 14.5, macOS 11.3, macCatalyst 14.5, watchOS 7.4, tvOS 14.5, *)
+    case characterTextbox = "character.textbox"
+    /// The SF Symbol named `hifispeaker.and.homepodmini`
+    @available(iOS 14.5, macOS 11.3, macCatalyst 14.5, watchOS 7.4, tvOS 14.5, *)
+    case hifispeakerAndHomepodmini = "hifispeaker.and.homepodmini"
+    /// The SF Symbol named `hifispeaker.and.homepodmini.fill`
+    @available(iOS 14.5, macOS 11.3, macCatalyst 14.5, watchOS 7.4, tvOS 14.5, *)
+    case hifispeakerAndHomepodminiFill = "hifispeaker.and.homepodmini.fill"
+    /// The SF Symbol named `homepod.and.homepodmini`
+    @available(iOS 14.5, macOS 11.3, macCatalyst 14.5, watchOS 7.4, tvOS 14.5, *)
+    case homepodAndHomepodmini = "homepod.and.homepodmini"
+    /// The SF Symbol named `homepod.and.homepodmini.fill`
+    @available(iOS 14.5, macOS 11.3, macCatalyst 14.5, watchOS 7.4, tvOS 14.5, *)
+    case homepodAndHomepodminiFill = "homepod.and.homepodmini.fill"
+    /// The SF Symbol named `homepodmini`
+    @available(iOS 14.5, macOS 11.3, macCatalyst 14.5, watchOS 7.4, tvOS 14.5, *)
+    case homepodmini = "homepodmini"
+    /// The SF Symbol named `homepodmini.2`
+    @available(iOS 14.5, macOS 11.3, macCatalyst 14.5, watchOS 7.4, tvOS 14.5, *)
+    case homepodmini2 = "homepodmini.2"
+    /// The SF Symbol named `homepodmini.2.fill`
+    @available(iOS 14.5, macOS 11.3, macCatalyst 14.5, watchOS 7.4, tvOS 14.5, *)
+    case homepodmini2Fill = "homepodmini.2.fill"
+    /// The SF Symbol named `homepodmini.fill`
+    @available(iOS 14.5, macOS 11.3, macCatalyst 14.5, watchOS 7.4, tvOS 14.5, *)
+    case homepodminiFill = "homepodmini.fill"
 
+    // - MARK: 15.0/12.0/8.0
     /// The SF Symbol named `123.rectangle`
     @available(iOS 15.0, macOS 12.0, macCatalyst 15.0, watchOS 8.0, tvOS 15.0, *)
     case _123Rectangle = "123.rectangle"
@@ -8092,64 +9604,3 @@ public enum SFSymbol: String {
     @available(iOS 15.0, macOS 12.0, macCatalyst 15.0, watchOS 8.0, tvOS 15.0, *)
     case xmarkAppFill = "xmark.app.fill"
 }
-
-@available(iOS 13.0, macOS 11.0, macCatalyst 13.0, watchOS 6.0, tvOS 13.0, *)
-public extension Image {
-    /// Creates a system symbol image.
-    ///
-    /// This initializer creates an image using a SF Symbol.
-    ///
-    /// - Parameters:
-    ///   - symbol: A case from the ``SFSymbol`` enum, representing the desired symbol.
-    init(symbol: SFSymbol) {
-        self.init(systemName: symbol.rawValue)
-    }
-}
-
-@available(iOS 14.0, macOS 11.0, macCatalyst 14.0, watchOS 7.0, tvOS 14.0, *)
-public extension Label where Title == Text, Icon == Image {
-    /// Creates a label with a system icon image and a title generated from a
-    /// localized string.
-    ///
-    /// - Parameters:
-    ///    - titleKey: A title generated from a localized string.
-    ///    - symbol: A case from the ``SFSymbol`` enum, representing the desired symbol.
-    init(_ titleKey: LocalizedStringKey, symbol: SFSymbol) {
-        self.init(titleKey, systemImage: symbol.rawValue)
-    }
-
-    /// Creates a label with a system icon image and a title generated from a
-    /// string.
-    ///
-    /// - Parameters:
-    ///    - title: A string used as the label's title.
-    ///    - symbol: A case from the ``SFSymbol`` enum, representing the desired symbol.
-    init<S>(_ title: S, symbol: SFSymbol) where S: StringProtocol {
-        self.init(title, systemImage: symbol.rawValue)
-    }
-}
-
-#if canImport(UIKit)
-@available(iOS 13.0, macCatalyst 13.0, watchOS 6.0, tvOS 13.0, *)
-public extension UIImage {
-    /// Creates an image object that contains a system symbol image.
-    ///
-    /// - Parameters:
-    ///   - symbol: A case from the ``SFSymbol`` enum, representing the desired symbol.
-    convenience init(symbol: SFSymbol) {
-        self.init(systemName: symbol.rawValue)!
-    }
-}
-#elseif canImport(AppKit)
-@available(macOS 11.0, *)
-public extension NSImage {
-    /// Creates a symbol image with the specified system symbol name and accessibility description.
-    ///
-    /// - Parameters:
-    ///   - symbol: A case from the ``SFSymbol`` enum, representing the desired symbol.
-    ///   - description: An optional accessibility description
-    convenience init(symbol: SFSymbol, accessibilityDescription description: String? = nil) {
-        self.init(systemSymbolName: symbol.rawValue, accessibilityDescription: description)!
-    }
-}
-#endif
